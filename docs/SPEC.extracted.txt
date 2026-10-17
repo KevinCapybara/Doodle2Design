@@ -73,7 +73,7 @@ is empty
 4. Tech Stack
 fastapi, uvicorn[standard], python-multipart, pydantic>=2, python-dotenv,
 anthropic, pillow
-VLM: Anthropic Messages API with image inputs. Default model string: 
+VLM: Anthropic Messages API with image inputs. Default model string:
  claude-sonnet-
 4-6. Make it conﬁgurable through env var VLM_MODEL.
 Images sent to the VLM must be base64 encoded and downscaled with Pillow so the
@@ -204,7 +204,7 @@ heading
 serif: Georgia, 'Times New Roman', serif; sans:
 Inter, system-ui, sans-serif; mono:
 'JetBrains Mono', ui-monospace, monospace;
-display: 
+display:
  'Trebuchet MS', 'Arial Black', sans-
 serif
 typography.body_font
@@ -232,18 +232,18 @@ width
 none 0px, thin 1px, thick 3px
 geometry.density --space tight 0.75rem, normal 1rem, airy 1.5rem
 effects.shadow --shadow ﬂat none; soft 0 4px 16px rgba(0,0,0,.12); hard
-6px 6px 0 var(--text); neumorphic 
+6px 6px 0 var(--text); neumorphic
  8px 8px
 16px rgba(0,0,0,.25), -8px -8px 16px
-rgba(255,255,255,.06); glow 
+rgba(255,255,255,.06); glow
  0 0 24px var(--
 primary)
 effects.gradient
  --hero-
 gradient
-none: none; subtle: 
+none: none; subtle:
  linear-gradient(135deg,
-var(--surface), var(--bg)); bold: 
+var(--surface), var(--bg)); bold:
  linear-
 gradient(135deg, var(--primary), var(--
 secondary))
@@ -277,7 +277,7 @@ Body: { "session_id", "round", "winner_id", "loser_id" }. Stores the Choice. Ret
 { "ok": true, "round": n, "total": 10 }.
 POST /api/extract
 Phase 3. Body: { "session_id" }. Collects the baseline input, the 10 winners and losers, calls
-the VLM with the extraction prompt (section 8.3), validates, stores and returns 
+the VLM with the extraction prompt (section 8.3), validates, stores and returns
  { "tokens":
 VibeTokens, "baseline": BaselineProfile, "degraded": bool }. Also writes the tokens
 to demo_site/vibe.json so the demo site can load them on refresh.
@@ -331,7 +331,7 @@ textures, patterns, listing the categories most useful to probe first"]
 For a rough sketch, infer mood from color choices, stroke style, and composition
 rather than drawing skill.
 --- PAGE 11 ---
-Instruction: "Return JSON 
+Instruction: "Return JSON
  { "pairs": [ { "category": str, "left_id": str,
 "right_id": str } x10 ] }. Each pair must be from the same category and contrast
 strongly on one aesthetic axis (for example dark versus bright, sharp versus organic,
@@ -378,7 +378,7 @@ Mock Mode must produce valid VibeTokens so the full ﬂow works offline. Show a 
 discreet "offline mode" badge in the UI footer when active (this is the only text allowed outside
 the result screen, and it must not appear on the A/B screen).
 10. Frontend (frontend/)
-Single page with a phase state machine in app.js: 
+Single page with a phase state machine in app.js:
  landing -> input -> ab -> extracting
 -> result. Show one phase at a time with a CSS fade transition. Use a clean neutral dark UI
 for the wizard itself (it should not resemble any output vibe).
@@ -444,7 +444,7 @@ through calc(var(--space) * n).
 Deﬁne sensible defaults in :root (a neutral light theme) so the page renders without
 any vibe applied.
 Font sizes should be expressed as calc(1rem * var(--type-scale)) multiples.
-Add 
+Add
  transition: background-color .4s, color .4s, border-radius .4s, box-
 shadow .4s on major elements so the re-skin visibly animates.
 apply_vibe.js
