@@ -5,8 +5,8 @@ from backend.schemas import ABPair
 
 
 def category_order(preferred):
-    order = list(dict.fromkeys([*preferred, *CATEGORIES]))
-    return [order[i % 4] for i in range(10)]
+    order = list(dict.fromkeys([*(c for c in preferred if c in CATEGORIES), *CATEGORIES]))
+    return [order[i % len(order)] for i in range(10)]
 
 
 def plan_pairs(db, preferred, seed):

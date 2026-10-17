@@ -2,7 +2,7 @@ from typing import Annotated, Literal
 from pydantic import BaseModel, ConfigDict, Field
 
 HexColor = Annotated[str, Field(pattern=r"^#[0-9a-fA-F]{6}$")]
-Category = Literal["architecture", "landscapes", "textures", "patterns"]
+Category = Literal["architecture", "landscapes", "objects", "animals", "patterns"]
 
 
 class StrictModel(BaseModel):
@@ -14,7 +14,7 @@ class BaselineProfile(StrictModel):
     attributes: list[str] = Field(min_length=3, max_length=6)
     dominant_colors: list[HexColor] = Field(min_length=2, max_length=5)
     mood_words: list[str] = Field(min_length=3, max_length=5)
-    preferred_categories: list[Category] = Field(max_length=4)
+    preferred_categories: list[Category] = Field(max_length=5)
 
 
 class ABPair(StrictModel):

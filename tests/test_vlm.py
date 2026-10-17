@@ -79,7 +79,10 @@ def test_invalid_model_pairs_fall_back_to_valid_seeded_plan(monkeypatch):
     async def invalid(system, content, validator):
         return validator({"pairs": [{"category": "bad", "left_id": "not-real", "right_id": "not-real"}]*10})
     monkeypatch.setattr(vlm, "request_json", invalid)
-    pairs, degraded = asyncio.run(vlm.plan_comparisons(ImageDB(), baseline_profile([solid_png("#cbdcba")]), "seed"))
+    db = ImageDB()
+    for entry in db.images.values():
+        entry["tags"] = []  # Exercise model planning; tagged photos intentionally skip it.
+    pairs, degraded = asyncio.run(vlm.plan_comparisons(db, baseline_profile([solid_png("#cbdcba")]), "seed"))
     assert len(pairs) == 10 and degraded
     assert len({i for pair in pairs for i in (pair.left_id, pair.right_id)}) == 20
 

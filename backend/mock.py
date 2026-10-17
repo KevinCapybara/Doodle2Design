@@ -21,7 +21,7 @@ def baseline_profile(images):
         attributes=["dark mode" if dark else "light mode", "sharp edges" if sharp else "organic", "vivid" if vivid else "minimal", "high contrast" if sharp else "gentle contrast"],
         dominant_colors=palette,
         mood_words=["dramatic" if dark else "open", "precise" if sharp else "calm", "energetic" if vivid else "grounded"],
-        preferred_categories=["architecture", "patterns", "textures", "landscapes"] if sharp else ["landscapes", "textures", "architecture", "patterns"],
+        preferred_categories=["architecture", "patterns", "objects", "animals", "landscapes"] if sharp else ["landscapes", "animals", "objects", "architecture", "patterns"],
     )
 
 

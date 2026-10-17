@@ -14,8 +14,8 @@ python start.py
 ```
 
 On Windows you can double-click run.bat; macOS/Linux users can run ./run.sh.
-The launcher creates .venv, installs requirements, creates .env, prepares 100
-reference images, and opens [localhost:8000](http://localhost:8000).
+The launcher creates .venv, installs requirements, creates .env, indexes the bundled 50 real
+photographs with AI-authored visual annotations, and opens [localhost:8000](http://localhost:8000).
 It tries port 8001 if 8000 is occupied. Ctrl+C stops the server.
 
 No frontend build, npm, database, authentication or hosting is required.
@@ -77,6 +77,33 @@ explicit retry. Start a new feeling cancels active work and clears the session.
 Generated pages include pause/resume motion and respect reduced-motion settings.
 The contact form validates locally and shows a demo confirmation; it sends nothing.
 
+## Real-photo reference dataset
+
+The A/B library contains **50 real Unsplash photographs**, ten each in scenery,
+architecture, objects, animals and photographed patterns/textures. All annotations
+were authored by Codex using vision, with **no human review**. Observed colors,
+shapes, textures and composition are separate from subjective mood words and
+suggested design treatments.
+
+Browse [the gallery](images/gallery.html), [JSON](images/dataset.json),
+[CSV](images/dataset.csv), and [dataset notes and licenses](images/README.md).
+Photographer credits, source URLs and file hashes are included for every photo.
+The five categories each appear twice across ten rounds, with no repeated photo.
+
+Normal startup uses the bundled local files. To restore missing photos and rebuild:
+
+```sh
+python scripts/download_photo_dataset.py
+python scripts/build_manifest.py
+```
+
+The downloader checks hashes and never generates placeholders. Rebuilding preserves
+complete annotations and provenance from `images/dataset.json`. Custom images can
+be added under the architecture, landscapes, objects, animals and patterns folders
+in `images/library/`; keep at least six distinct images per category. Restart the
+server after rebuilding. Photos retain the Unsplash License rather than the
+repository's MIT software license.
+
 ## Your design documents
 
 The supplied archive contains 30 **Word documents**, despite the original PDF
@@ -132,16 +159,6 @@ The original taste extraction retains its 14-second model deadline and offline
 fallback.
 
 See [LLM_REDESIGN.md](docs/LLM_REDESIGN.md) for contracts, lifecycle and boundaries.
-
-## Reference library
-
-The included 100 images are original procedural references, not curated photos.
-Add your own under images/library/architecture, landscapes, textures and patterns,
-then run python scripts/build_manifest.py and restart.
-
-At least six distinct images per category are required. Content fingerprinting
-excludes duplicates even under different filenames. Plans contain 20 unique
-images, same-category pairs and at least two rounds per category.
 
 ## API
 

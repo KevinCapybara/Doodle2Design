@@ -6,14 +6,14 @@ from PIL import Image, ImageOps
 
 from scripts.build_manifest import ROOT, build_manifest
 
-CATEGORIES = ("architecture", "landscapes", "textures", "patterns")
+from backend.library_config import CATEGORIES
 
 
 class ImageDB:
     def __init__(self, root=ROOT):
         self.root = Path(root)
         manifest = self.root / "images/manifest.json"
-        entries = json.loads(manifest.read_text())["images"] if manifest.exists() else build_manifest(self.root)
+        entries = json.loads(manifest.read_text(encoding="utf-8"))["images"] if manifest.exists() else build_manifest(self.root)
         self.images = {}
         seen_ids, seen_content = set(), set()
         for entry in entries:

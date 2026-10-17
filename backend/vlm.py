@@ -88,8 +88,14 @@ async def extract_theme(session, db):
     if mock_mode():
         return fallback, True
     try:
-        losers = [{"filename": db.path(c.loser_id).stem, "tags": db.images[c.loser_id]["tags"]} for c in session.choices]
-        text = prompts.EXTRACTION_USER+"\nBaseline: "+session.baseline.model_dump_json()+"\nRejected references: "+json.dumps(losers)
+        def reference(image_id):
+            entry = db.images[image_id]
+            return {"id": image_id, "filename": db.path(image_id).stem, "tags": entry["tags"],
+                    "observed": entry.get("observed", {}), "feeling": entry.get("feeling", {}),
+                    "suggested_design": entry.get("suggested_design", {})}
+        losers = [reference(c.loser_id) for c in session.choices]
+        winners_metadata = [reference(c.winner_id) for c in session.choices]
+        text = prompts.EXTRACTION_USER+"\nBaseline: "+session.baseline.model_dump_json()+"\nSelected reference annotations (AI interpretations, not ground truth): "+json.dumps(winners_metadata)+"\nRejected references: "+json.dumps(losers)
         content = [image_block(i) for i in session.images + winners] + [{"type": "text", "text": text}]
         # The tighter overall deadline keeps the on-stage extraction transition bounded.
         result = await asyncio.wait_for(request_json(prompts.EXTRACTION_SYSTEM, content, validate_extraction), timeout=14)

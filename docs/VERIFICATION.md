@@ -1,5 +1,18 @@
 # Verification — Doodle2Design
 
+## Real-photo dataset update — October 17, 2026
+
+The active reference library now contains **50 real photographs**, ten each in landscapes, architecture, objects, animals and patterns/textures. It replaces the procedural library described in the earlier verification below.
+
+- Photo-update suite before integration: **42 passed**, 18.48 seconds, Python 3.13. No live model calls were made. One upstream Starlette/httpx deprecation warning remains.
+- Dataset checks cover exactly 50 distinct IDs and file hashes, five balanced categories, readable JPEGs, saved dimensions, complete vision annotations, source/license metadata, CSV parity, and absence of additional files in the active library.
+- Manifest rebuild preserves full annotations and stable IDs. Empty libraries report an explicit restore instruction instead of generating synthetic images.
+- Existing ten-round API tests pass with all five categories and twenty distinct photo IDs.
+- The gallery was inspected in the in-app browser. The patterns filter displays ten cards, the replacement material photo has the correct description, external gallery JavaScript works under the app's content security policy, and the desktop layout has no horizontal overflow.
+- Preview: [dataset gallery](dataset_gallery.png). Dataset and annotation methodology: [images/README.md](../images/README.md).
+
+## Website-generation verification
+
 Verified on Windows with Python 3.12 and headless Microsoft Edge on 2026-10-17.
 Regression tests do not make live paid model requests. Keys are stripped from
 the test environment and all provider responses are local fakes. A separate live

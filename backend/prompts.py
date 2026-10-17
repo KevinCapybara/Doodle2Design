@@ -12,7 +12,7 @@ BASELINE_USER = """Analyze the aesthetic of these images. Return JSON with exact
  "attributes": ["3 to 6 short design descriptors such as dark mode, sharp edges, high contrast, organic, minimal"],
  "dominant_colors": ["2 to 5 six-digit hex colors actually present in the images"],
  "mood_words": ["3 to 5 emotional words"],
- "preferred_categories": ["ordered subset of architecture, landscapes, textures, patterns"]
+ "preferred_categories": ["ordered subset of architecture, landscapes, objects, animals, patterns"]
 }
 For a rough sketch, infer mood from color choices, stroke style, and composition rather than drawing skill."""
 

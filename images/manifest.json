@@ -3,602 +3,4726 @@
     {
       "id": "architecture_001",
       "category": "architecture",
-      "path": "images/library/architecture/amber_09.jpg",
-      "tags": []
+      "path": "images/library/architecture/architecture_001.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "dH6IjhWHNQQ",
+        "photographer": "Tim Stief",
+        "source_title": "Curved building against blue sky",
+        "page_url": "https://unsplash.com/photos/dH6IjhWHNQQ",
+        "download_url": "https://images.unsplash.com/photo-1548248823-ce16a73b6d49?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 802,
+      "height": 1200,
+      "observed": {
+        "description": "A copper-toned curved facade with repeating diamond-like openings curls around pale sky.",
+        "color_words": [
+          "copper",
+          "charcoal",
+          "pale blue",
+          "silver"
+        ],
+        "palette_hex": [
+          "#d9e3ea",
+          "#161615",
+          "#a4989c",
+          "#685553",
+          "#342d29"
+        ],
+        "shapes": [
+          "curved wall",
+          "repeating diamonds",
+          "sweeping arc"
+        ],
+        "textures": [
+          "metal lattice",
+          "smooth panels"
+        ],
+        "composition": "Upward view follows the facade around a large area of sky.",
+        "brightness": "mixed",
+        "contrast": "high"
+      },
+      "sha256": "5d7219b654e24400ca6e0fbc544e4975c8ee4ff53a9513fe28bfd112264daabd",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "sculptural",
+          "sophisticated",
+          "dramatic"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "soft",
+        "motion": "calm",
+        "effects": [
+          "metallic accents",
+          "layered surfaces"
+        ],
+        "rationale": "Use copper accents and rhythmic geometric detail while retaining the facade's sweeping curvature.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "sculptural",
+        "sophisticated",
+        "dramatic",
+        "copper",
+        "charcoal",
+        "pale blue",
+        "silver",
+        "curved wall",
+        "repeating diamonds",
+        "sweeping arc",
+        "metal lattice",
+        "smooth panels",
+        "dark theme",
+        "soft corners",
+        "calm motion",
+        "mixed brightness",
+        "high contrast"
+      ]
     },
     {
       "id": "architecture_002",
       "category": "architecture",
-      "path": "images/library/architecture/amber_19.jpg",
-      "tags": []
+      "path": "images/library/architecture/architecture_002.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "PhYq704ffdA",
+        "photographer": "Sean Pollock",
+        "source_title": "Low-angle city high-rises",
+        "page_url": "https://unsplash.com/photos/PhYq704ffdA",
+        "download_url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 800,
+      "observed": {
+        "description": "Dark glass skyscrapers converge upward around a pale sky with warm amber windows near the base.",
+        "color_words": [
+          "steel blue",
+          "charcoal",
+          "pale gray",
+          "amber"
+        ],
+        "palette_hex": [
+          "#dee7f1",
+          "#0d1113",
+          "#7b8c9f",
+          "#36414a",
+          "#202426"
+        ],
+        "shapes": [
+          "sharp rectangles",
+          "converging lines",
+          "triangular perspective"
+        ],
+        "textures": [
+          "reflective glass",
+          "window grid"
+        ],
+        "composition": "Low-angle view creates strong upward convergence around central negative space.",
+        "brightness": "dark",
+        "contrast": "high"
+      },
+      "sha256": "8db4c3058fc223436a04946d40e482302957af4fe51d0edd2cace5dd04032432",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "assertive",
+          "urban",
+          "ambitious"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "sharp",
+        "motion": "kinetic",
+        "effects": [
+          "glass surface",
+          "thin outlines"
+        ],
+        "rationale": "Use a dark blue grid, crisp corners and brisk reveals to express the towers' vertical energy.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "assertive",
+        "urban",
+        "ambitious",
+        "steel blue",
+        "charcoal",
+        "pale gray",
+        "amber",
+        "sharp rectangles",
+        "converging lines",
+        "triangular perspective",
+        "reflective glass",
+        "window grid",
+        "dark theme",
+        "sharp corners",
+        "kinetic motion",
+        "dark brightness",
+        "high contrast"
+      ]
     },
     {
       "id": "architecture_003",
       "category": "architecture",
-      "path": "images/library/architecture/cobalt_08.jpg",
-      "tags": []
+      "path": "images/library/architecture/architecture_003.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "Sc5RKXLBjGg",
+        "photographer": "Anders Jild\u00e9n",
+        "source_title": "Low-angle gray building",
+        "page_url": "https://unsplash.com/photos/Sc5RKXLBjGg",
+        "download_url": "https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 800,
+      "observed": {
+        "description": "Stacked gray balconies and black recesses form strong diagonal bands across a building facade.",
+        "color_words": [
+          "cool gray",
+          "black",
+          "slate blue"
+        ],
+        "palette_hex": [
+          "#9ca39f",
+          "#4c5760",
+          "#11151f",
+          "#0b0e19",
+          "#1c222b"
+        ],
+        "shapes": [
+          "diagonal bands",
+          "rectangles",
+          "parallel edges"
+        ],
+        "textures": [
+          "smooth concrete",
+          "metal railings"
+        ],
+        "composition": "Close architectural crop emphasizes repeated diagonals with almost no sky.",
+        "brightness": "dark",
+        "contrast": "high"
+      },
+      "sha256": "9550d7319149e051bdfdb2c82d98ec13ccc389e8afb8e6b573338cfe222b7cd9",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "precise",
+          "industrial",
+          "ordered"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "sharp",
+        "motion": "none",
+        "effects": [
+          "flat surfaces",
+          "thin outlines"
+        ],
+        "rationale": "Build a compact modular grid with sharp edges and alternating dark and gray bands.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "precise",
+        "industrial",
+        "ordered",
+        "cool gray",
+        "black",
+        "slate blue",
+        "diagonal bands",
+        "rectangles",
+        "parallel edges",
+        "smooth concrete",
+        "metal railings",
+        "dark theme",
+        "sharp corners",
+        "none motion",
+        "dark brightness",
+        "high contrast"
+      ]
     },
     {
       "id": "architecture_004",
       "category": "architecture",
-      "path": "images/library/architecture/cobalt_18.jpg",
-      "tags": []
+      "path": "images/library/architecture/architecture_004.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "RFDP7_80v5A",
+        "photographer": "Joel Filipe",
+        "source_title": "White modern building",
+        "page_url": "https://unsplash.com/photos/RFDP7_80v5A",
+        "download_url": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 848,
+      "height": 1200,
+      "observed": {
+        "description": "A white modular building projects rectangular volumes into a pale blue sky.",
+        "color_words": [
+          "white",
+          "pale blue",
+          "light gray"
+        ],
+        "palette_hex": [
+          "#c2d4e0",
+          "#c9d8e0",
+          "#bdc8ce",
+          "#929b9f",
+          "#eaeced"
+        ],
+        "shapes": [
+          "rectangles",
+          "right angles",
+          "projecting cubes"
+        ],
+        "textures": [
+          "smooth panels",
+          "glass"
+        ],
+        "composition": "Minimal upward composition with open sky surrounding the stepped building.",
+        "brightness": "light",
+        "contrast": "low"
+      },
+      "sha256": "cc6afb08b0c07b49450c8144ffde29a846fe43f9e7933571918fc19be7d5b377",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "clean",
+          "quiet",
+          "modern"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "sharp",
+        "motion": "none",
+        "effects": [
+          "flat surfaces",
+          "thin borders"
+        ],
+        "rationale": "Use white space, pale blue accents and a clear rectangular grid with minimal ornament.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "clean",
+        "quiet",
+        "modern",
+        "white",
+        "pale blue",
+        "light gray",
+        "rectangles",
+        "right angles",
+        "projecting cubes",
+        "smooth panels",
+        "glass",
+        "light theme",
+        "sharp corners",
+        "none motion",
+        "light brightness",
+        "low contrast"
+      ]
     },
     {
       "id": "architecture_005",
       "category": "architecture",
-      "path": "images/library/architecture/electric_04.jpg",
-      "tags": []
+      "path": "images/library/architecture/architecture_005.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "K67sBVqLLuw",
+        "photographer": "Joakim N\u00e5dell",
+        "source_title": "Axel Towers Copenhagen",
+        "page_url": "https://unsplash.com/photos/K67sBVqLLuw",
+        "download_url": "https://images.unsplash.com/photo-1527576539890-dfa815648363?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 960,
+      "height": 1200,
+      "observed": {
+        "description": "Dark curved facades with dense horizontal rails surround a bright white opening in the sky.",
+        "color_words": [
+          "black",
+          "white",
+          "gray"
+        ],
+        "palette_hex": [
+          "#111111",
+          "#2c2c2c",
+          "#f3f3f3",
+          "#f5f5f5",
+          "#b0b0b0"
+        ],
+        "shapes": [
+          "looping curves",
+          "horizontal stripes",
+          "oval opening"
+        ],
+        "textures": [
+          "metal rails",
+          "window grid"
+        ],
+        "composition": "Monochrome upward view uses a bright central opening enclosed by curved buildings.",
+        "brightness": "mixed",
+        "contrast": "high"
+      },
+      "sha256": "263038de4171aa3890b3a12e00e5dbfb33d82d07b9b31a74b95c7ce824b4d492",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "futuristic",
+          "dramatic",
+          "enveloping"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "outline surfaces",
+          "high contrast"
+        ],
+        "rationale": "Use monochrome contrast, rounded containers and repeating fine lines inspired by the enclosing facades.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "futuristic",
+        "dramatic",
+        "enveloping",
+        "black",
+        "white",
+        "gray",
+        "looping curves",
+        "horizontal stripes",
+        "oval opening",
+        "metal rails",
+        "window grid",
+        "dark theme",
+        "round corners",
+        "calm motion",
+        "mixed brightness",
+        "high contrast"
+      ]
     },
     {
       "id": "architecture_006",
       "category": "architecture",
-      "path": "images/library/architecture/electric_14.jpg",
-      "tags": []
+      "path": "images/library/architecture/architecture_006.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "T5nXYXCf50I",
+        "photographer": "Maarten Deckers",
+        "source_title": "Wavy building against sky",
+        "page_url": "https://unsplash.com/photos/T5nXYXCf50I",
+        "download_url": "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 800,
+      "observed": {
+        "description": "A white rippling lattice facade curves beneath a clear teal-blue sky.",
+        "color_words": [
+          "white",
+          "teal blue",
+          "silver"
+        ],
+        "palette_hex": [
+          "#367a97",
+          "#39535b",
+          "#9db2b6",
+          "#5e8ea0",
+          "#c6d5d8"
+        ],
+        "shapes": [
+          "wave curves",
+          "diamond lattice",
+          "repeated diagonals"
+        ],
+        "textures": [
+          "smooth cladding",
+          "perforated lattice"
+        ],
+        "composition": "Facade sweeps across the lower frame beneath a broad empty sky.",
+        "brightness": "light",
+        "contrast": "high"
+      },
+      "sha256": "e7c6ab55223c565117d4904a2fcb91732629f2413230a7f6a22169b2a4a99ae0",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "fluid",
+          "light",
+          "innovative"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "soft",
+        "motion": "calm",
+        "effects": [
+          "wave motif",
+          "soft shadow"
+        ],
+        "rationale": "Combine an airy blue-and-white palette with curved dividers and subtle repeating diamond details.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "fluid",
+        "light",
+        "innovative",
+        "white",
+        "teal blue",
+        "silver",
+        "wave curves",
+        "diamond lattice",
+        "repeated diagonals",
+        "smooth cladding",
+        "perforated lattice",
+        "light theme",
+        "soft corners",
+        "calm motion",
+        "light brightness",
+        "high contrast"
+      ]
     },
     {
       "id": "architecture_007",
       "category": "architecture",
-      "path": "images/library/architecture/electric_24.jpg",
-      "tags": []
+      "path": "images/library/architecture/architecture_007.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "0LAJfSNa-xQ",
+        "photographer": "Verne Ho",
+        "source_title": "Worms-eye building view",
+        "page_url": "https://unsplash.com/photos/0LAJfSNa-xQ",
+        "download_url": "https://images.unsplash.com/photo-1435575653489-b0873ec954e2?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 800,
+      "observed": {
+        "description": "Glass and metal building planes converge around a bright triangular opening overhead.",
+        "color_words": [
+          "steel gray",
+          "blue gray",
+          "charcoal"
+        ],
+        "palette_hex": [
+          "#7e8e9e",
+          "#0a161b",
+          "#c9d5df",
+          "#1f323e",
+          "#415566"
+        ],
+        "shapes": [
+          "triangular opening",
+          "converging diagonals",
+          "grid lines"
+        ],
+        "textures": [
+          "reflective glass",
+          "smooth metal"
+        ],
+        "composition": "Near-symmetrical upward perspective centers a triangular patch of sky.",
+        "brightness": "dark",
+        "contrast": "high"
+      },
+      "sha256": "6c599e2ad8eb28bc4adb300bcf1c157789239512a9d30530eb63b620d0a8e5a3",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "technical",
+          "focused",
+          "futuristic"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "sharp",
+        "motion": "kinetic",
+        "effects": [
+          "glass surface",
+          "thin outlines"
+        ],
+        "rationale": "Use triangular accents, crisp geometry and concise movement anchored to a centered grid.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "technical",
+        "focused",
+        "futuristic",
+        "steel gray",
+        "blue gray",
+        "charcoal",
+        "triangular opening",
+        "converging diagonals",
+        "grid lines",
+        "reflective glass",
+        "smooth metal",
+        "dark theme",
+        "sharp corners",
+        "kinetic motion",
+        "dark brightness",
+        "high contrast"
+      ]
     },
     {
       "id": "architecture_008",
       "category": "architecture",
-      "path": "images/library/architecture/midnight_01.jpg",
-      "tags": []
+      "path": "images/library/architecture/architecture_008.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "QdAAasrZhdk",
+        "photographer": "Lance Anderson",
+        "source_title": "Rock and Roll Hall of Fame Cleveland",
+        "page_url": "https://unsplash.com/photos/QdAAasrZhdk",
+        "download_url": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 800,
+      "observed": {
+        "description": "A bright white geometric museum with angular projecting volumes stands beside a glass slope.",
+        "color_words": [
+          "white",
+          "pale blue",
+          "cool gray"
+        ],
+        "palette_hex": [
+          "#c1ced6",
+          "#dfe6eb",
+          "#eff2f5",
+          "#7e8f97",
+          "#f9fafa"
+        ],
+        "shapes": [
+          "triangles",
+          "sloping planes",
+          "projecting blocks"
+        ],
+        "textures": [
+          "panel grid",
+          "reflective glass"
+        ],
+        "composition": "Wide low-angle composition emphasizes a projecting white volume above diagonal glazing.",
+        "brightness": "light",
+        "contrast": "medium"
+      },
+      "sha256": "25e9a4bb66afb9b7b6aafbb53fe5b1fe53896b4b8903e769af9e5d621b16e0aa",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "bold",
+          "architectural",
+          "clear"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "sharp",
+        "motion": "kinetic",
+        "effects": [
+          "outline surfaces",
+          "hard shadow"
+        ],
+        "rationale": "Use white modular panels, angular buttons and strong diagonal accents to echo the museum's geometry.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "bold",
+        "architectural",
+        "clear",
+        "white",
+        "pale blue",
+        "cool gray",
+        "triangles",
+        "sloping planes",
+        "projecting blocks",
+        "panel grid",
+        "reflective glass",
+        "light theme",
+        "sharp corners",
+        "kinetic motion",
+        "light brightness",
+        "medium contrast"
+      ]
     },
     {
       "id": "architecture_009",
       "category": "architecture",
-      "path": "images/library/architecture/midnight_11.jpg",
-      "tags": []
+      "path": "images/library/architecture/architecture_009.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "ACt8ycSzpdE",
+        "photographer": "Jimmy Chang",
+        "source_title": "White concrete building",
+        "page_url": "https://unsplash.com/photos/ACt8ycSzpdE",
+        "download_url": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 941,
+      "height": 1200,
+      "observed": {
+        "description": "Blue-and-white balcony bands curve around a narrow opening of blue sky and warm underside.",
+        "color_words": [
+          "blue",
+          "white",
+          "peach",
+          "navy"
+        ],
+        "palette_hex": [
+          "#436a94",
+          "#1c2944",
+          "#80c4e2",
+          "#7db0cd",
+          "#accfdd"
+        ],
+        "shapes": [
+          "stacked curves",
+          "hourglass opening",
+          "parallel bands"
+        ],
+        "textures": [
+          "smooth painted surfaces",
+          "glass"
+        ],
+        "composition": "Upward crop creates a tall central opening bounded by flowing balcony lines.",
+        "brightness": "light",
+        "contrast": "high"
+      },
+      "sha256": "e7290741321e93bf283ba27e180ebd255bdd1765a9958217d39346913c88e97f",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "fluid",
+          "playful",
+          "modern"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "wave motif",
+          "subtle gradient"
+        ],
+        "rationale": "Use blue-and-white curved sections with a warm peach accent and smooth transitions.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "fluid",
+        "playful",
+        "modern",
+        "blue",
+        "white",
+        "peach",
+        "navy",
+        "stacked curves",
+        "hourglass opening",
+        "parallel bands",
+        "smooth painted surfaces",
+        "glass",
+        "light theme",
+        "round corners",
+        "calm motion",
+        "light brightness",
+        "high contrast"
+      ]
     },
     {
       "id": "architecture_010",
       "category": "architecture",
-      "path": "images/library/architecture/midnight_21.jpg",
-      "tags": []
-    },
-    {
-      "id": "architecture_011",
-      "category": "architecture",
-      "path": "images/library/architecture/ocean_06.jpg",
-      "tags": []
-    },
-    {
-      "id": "architecture_012",
-      "category": "architecture",
-      "path": "images/library/architecture/ocean_16.jpg",
-      "tags": []
-    },
-    {
-      "id": "architecture_013",
-      "category": "architecture",
-      "path": "images/library/architecture/paper_05.jpg",
-      "tags": []
-    },
-    {
-      "id": "architecture_014",
-      "category": "architecture",
-      "path": "images/library/architecture/paper_15.jpg",
-      "tags": []
-    },
-    {
-      "id": "architecture_015",
-      "category": "architecture",
-      "path": "images/library/architecture/paper_25.jpg",
-      "tags": []
-    },
-    {
-      "id": "architecture_016",
-      "category": "architecture",
-      "path": "images/library/architecture/rose_07.jpg",
-      "tags": []
-    },
-    {
-      "id": "architecture_017",
-      "category": "architecture",
-      "path": "images/library/architecture/rose_17.jpg",
-      "tags": []
-    },
-    {
-      "id": "architecture_018",
-      "category": "architecture",
-      "path": "images/library/architecture/sage_03.jpg",
-      "tags": []
-    },
-    {
-      "id": "architecture_019",
-      "category": "architecture",
-      "path": "images/library/architecture/sage_13.jpg",
-      "tags": []
-    },
-    {
-      "id": "architecture_020",
-      "category": "architecture",
-      "path": "images/library/architecture/sage_23.jpg",
-      "tags": []
-    },
-    {
-      "id": "architecture_021",
-      "category": "architecture",
-      "path": "images/library/architecture/sunlit_10.jpg",
-      "tags": []
-    },
-    {
-      "id": "architecture_022",
-      "category": "architecture",
-      "path": "images/library/architecture/sunlit_20.jpg",
-      "tags": []
-    },
-    {
-      "id": "architecture_023",
-      "category": "architecture",
-      "path": "images/library/architecture/terracotta_02.jpg",
-      "tags": []
-    },
-    {
-      "id": "architecture_024",
-      "category": "architecture",
-      "path": "images/library/architecture/terracotta_12.jpg",
-      "tags": []
-    },
-    {
-      "id": "architecture_025",
-      "category": "architecture",
-      "path": "images/library/architecture/terracotta_22.jpg",
-      "tags": []
+      "path": "images/library/architecture/architecture_010.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "FTU03hKgMZo",
+        "photographer": "Kim Eang Eng",
+        "source_title": "Phnom Penh skyline at night",
+        "page_url": "https://unsplash.com/photos/FTU03hKgMZo",
+        "download_url": "https://images.unsplash.com/photo-1609860850812-86de933acace?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 800,
+      "observed": {
+        "description": "A nighttime skyline has a tall magenta-lit tower and cyan accents against a deep blue sky.",
+        "color_words": [
+          "midnight blue",
+          "magenta",
+          "cyan",
+          "black"
+        ],
+        "palette_hex": [
+          "#000c45",
+          "#171e6e",
+          "#3a338c",
+          "#6a6bb6",
+          "#160940"
+        ],
+        "shapes": [
+          "vertical towers",
+          "rectangular grid",
+          "thin light lines"
+        ],
+        "textures": [
+          "glass",
+          "luminous windows"
+        ],
+        "composition": "Bright tower cluster rises against a large dark sky with a low dark foreground.",
+        "brightness": "dark",
+        "contrast": "high"
+      },
+      "sha256": "db07131b364945d633ecefc78f94cb66d12cb39da989210409494f2201e56950",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "electric",
+          "futuristic",
+          "energetic"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "sharp",
+        "motion": "kinetic",
+        "effects": [
+          "neon glow",
+          "glass surface"
+        ],
+        "rationale": "Use a midnight theme with magenta and cyan highlights, sharp cards and restrained pulsing accents.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "electric",
+        "futuristic",
+        "energetic",
+        "midnight blue",
+        "magenta",
+        "cyan",
+        "black",
+        "vertical towers",
+        "rectangular grid",
+        "thin light lines",
+        "glass",
+        "luminous windows",
+        "dark theme",
+        "sharp corners",
+        "kinetic motion",
+        "dark brightness",
+        "high contrast"
+      ]
     },
     {
       "id": "landscapes_001",
       "category": "landscapes",
-      "path": "images/library/landscapes/amber_09.jpg",
-      "tags": []
+      "path": "images/library/landscapes/landscapes_001.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "-SO3JtE3gZo",
+        "photographer": "Claudio Testa",
+        "source_title": "Green hills under cloudy sky",
+        "page_url": "https://unsplash.com/photos/-SO3JtE3gZo",
+        "download_url": "https://images.unsplash.com/photo-1506260408121-e353d10b87c7?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 750,
+      "observed": {
+        "description": "Rolling green hills and a grassy foreground beneath a clouded pale sky.",
+        "color_words": [
+          "grass green",
+          "olive",
+          "cream",
+          "slate"
+        ],
+        "palette_hex": [
+          "#677c40",
+          "#8b9d4f",
+          "#384b28",
+          "#e1dfd0",
+          "#a6b46e"
+        ],
+        "shapes": [
+          "rolling curves",
+          "soft horizon",
+          "tree clusters"
+        ],
+        "textures": [
+          "fine grass",
+          "soft clouds"
+        ],
+        "composition": "Wide layered hills with an open sky and foreground depth.",
+        "brightness": "mixed",
+        "contrast": "medium"
+      },
+      "sha256": "173342ab94ca918b73f590b746d4fead18e1f7382a7712bfbee58cfef1a0c6bd",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "calm",
+          "fresh",
+          "open"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "soft shadow",
+          "subtle gradient"
+        ],
+        "rationale": "Use fresh greens, rounded cards and slow transitions to echo the soft hills and open space.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "calm",
+        "fresh",
+        "open",
+        "grass green",
+        "olive",
+        "cream",
+        "slate",
+        "rolling curves",
+        "soft horizon",
+        "tree clusters",
+        "fine grass",
+        "soft clouds",
+        "light theme",
+        "round corners",
+        "calm motion",
+        "mixed brightness",
+        "medium contrast"
+      ]
     },
     {
       "id": "landscapes_002",
       "category": "landscapes",
-      "path": "images/library/landscapes/amber_19.jpg",
-      "tags": []
+      "path": "images/library/landscapes/landscapes_002.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "K2s_YE031CA",
+        "photographer": "Mark Harpur",
+        "source_title": "Stone path to Lake Atitlan pier",
+        "page_url": "https://unsplash.com/photos/K2s_YE031CA",
+        "download_url": "https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 800,
+      "observed": {
+        "description": "A path between purple flowers leads toward a lake and distant peaks under a violet and golden sunset.",
+        "color_words": [
+          "violet",
+          "lavender",
+          "gold",
+          "deep purple"
+        ],
+        "palette_hex": [
+          "#2f2635",
+          "#9174a5",
+          "#6e496f",
+          "#b599c5",
+          "#d9bfd1"
+        ],
+        "shapes": [
+          "triangular peaks",
+          "receding path",
+          "horizontal bands"
+        ],
+        "textures": [
+          "dense flowers",
+          "smooth water"
+        ],
+        "composition": "Central leading path framed by flowers with a luminous horizon.",
+        "brightness": "mixed",
+        "contrast": "high"
+      },
+      "sha256": "1f4406d3ca8fb558ac3892c8c7bc19a2dc3f196e63dfb85550e04b46a2d54be9",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "romantic",
+          "dreamy",
+          "uplifting"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "soft",
+        "motion": "calm",
+        "effects": [
+          "soft glow",
+          "bold gradient"
+        ],
+        "rationale": "Pair violet surfaces with warm gold accents and gentle reveals inspired by the sunset and flower-lined path.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "romantic",
+        "dreamy",
+        "uplifting",
+        "violet",
+        "lavender",
+        "gold",
+        "deep purple",
+        "triangular peaks",
+        "receding path",
+        "horizontal bands",
+        "dense flowers",
+        "smooth water",
+        "dark theme",
+        "soft corners",
+        "calm motion",
+        "mixed brightness",
+        "high contrast"
+      ]
     },
     {
       "id": "landscapes_003",
       "category": "landscapes",
-      "path": "images/library/landscapes/cobalt_08.jpg",
-      "tags": []
+      "path": "images/library/landscapes/landscapes_003.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "UCd78vfC8vU",
+        "photographer": "Johannes Andersson",
+        "source_title": "Deer in Yosemite meadow",
+        "page_url": "https://unsplash.com/photos/UCd78vfC8vU",
+        "download_url": "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 727,
+      "height": 1200,
+      "observed": {
+        "description": "Deer stand in a golden meadow below a sunlit granite dome and dark conifers.",
+        "color_words": [
+          "golden yellow",
+          "forest green",
+          "stone gray",
+          "pale blue"
+        ],
+        "palette_hex": [
+          "#303317",
+          "#656036",
+          "#bbaa8d",
+          "#e0f0f9",
+          "#ebf4f8"
+        ],
+        "shapes": [
+          "rounded dome",
+          "vertical trees",
+          "organic silhouettes"
+        ],
+        "textures": [
+          "coarse rock",
+          "grass",
+          "needles"
+        ],
+        "composition": "Portrait composition with animals low in the frame and a dominant mountain above.",
+        "brightness": "mixed",
+        "contrast": "high"
+      },
+      "sha256": "ae384494c92d2ec4464a021342805586904da192a026d788fbe35dbfcf68f158",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "grounded",
+          "quiet",
+          "majestic"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "paper surface",
+          "soft shadow"
+        ],
+        "rationale": "Use warm meadow accents and rounded natural forms with generous vertical spacing.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "grounded",
+        "quiet",
+        "majestic",
+        "golden yellow",
+        "forest green",
+        "stone gray",
+        "pale blue",
+        "rounded dome",
+        "vertical trees",
+        "organic silhouettes",
+        "coarse rock",
+        "grass",
+        "needles",
+        "light theme",
+        "round corners",
+        "calm motion",
+        "mixed brightness",
+        "high contrast"
+      ]
     },
     {
       "id": "landscapes_004",
       "category": "landscapes",
-      "path": "images/library/landscapes/cobalt_18.jpg",
-      "tags": []
+      "path": "images/library/landscapes/landscapes_004.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "NRQV-hBF10M",
+        "photographer": "Bailey Zindel",
+        "source_title": "River in Yosemite Valley at low light",
+        "page_url": "https://unsplash.com/photos/NRQV-hBF10M",
+        "download_url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 801,
+      "observed": {
+        "description": "A river winds between dark pine forests and layered blue cliffs under a softly glowing peach sky.",
+        "color_words": [
+          "blue gray",
+          "pine green",
+          "peach",
+          "silver"
+        ],
+        "palette_hex": [
+          "#334544",
+          "#a8b6bc",
+          "#597b88",
+          "#e5e3e0",
+          "#d8dcde"
+        ],
+        "shapes": [
+          "winding river",
+          "layered silhouettes",
+          "vertical trees"
+        ],
+        "textures": [
+          "rippling water",
+          "mist",
+          "rock"
+        ],
+        "composition": "Wide valley with a river leading inward and distant layers fading into haze.",
+        "brightness": "mixed",
+        "contrast": "medium"
+      },
+      "sha256": "328c86fbbe09e3a9d494a41c09694ebca3593553ca9150a2f4edf397e99387f3",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "serene",
+          "reflective",
+          "spacious"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "subtle gradient",
+          "soft shadow"
+        ],
+        "rationale": "Use muted blue-green layers, flowing dividers and slow motion to reflect the misty river valley.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "serene",
+        "reflective",
+        "spacious",
+        "blue gray",
+        "pine green",
+        "peach",
+        "silver",
+        "winding river",
+        "layered silhouettes",
+        "vertical trees",
+        "rippling water",
+        "mist",
+        "rock",
+        "dark theme",
+        "round corners",
+        "calm motion",
+        "mixed brightness",
+        "medium contrast"
+      ]
     },
     {
       "id": "landscapes_005",
       "category": "landscapes",
-      "path": "images/library/landscapes/electric_04.jpg",
-      "tags": []
+      "path": "images/library/landscapes/landscapes_005.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "T7K4aEPoGGk",
+        "photographer": "Pietro De Grandi",
+        "source_title": "Three wooden boats on blue lake",
+        "page_url": "https://unsplash.com/photos/T7K4aEPoGGk",
+        "download_url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 800,
+      "observed": {
+        "description": "Wooden boats float on clear turquoise water between rocky forested mountains beneath blue sky.",
+        "color_words": [
+          "turquoise",
+          "cyan",
+          "pine green",
+          "warm wood"
+        ],
+        "palette_hex": [
+          "#5ea898",
+          "#464f41",
+          "#588774",
+          "#9cb1b3",
+          "#b9d2e3"
+        ],
+        "shapes": [
+          "broad horizontal lake",
+          "angular cliffs",
+          "small boat ovals"
+        ],
+        "textures": [
+          "clear ripples",
+          "rough stone",
+          "dense foliage"
+        ],
+        "composition": "Bright wide scene with small boats anchoring a large area of open water.",
+        "brightness": "light",
+        "contrast": "high"
+      },
+      "sha256": "df6adf54e943de113133b98e3ab593212edb34d8bf9188aea827831f23a10405",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "fresh",
+          "inviting",
+          "adventurous"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "glass surface",
+          "subtle gradient"
+        ],
+        "rationale": "Use clear turquoise accents, airy sections and softly rounded controls inspired by the open lake.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "fresh",
+        "inviting",
+        "adventurous",
+        "turquoise",
+        "cyan",
+        "pine green",
+        "warm wood",
+        "broad horizontal lake",
+        "angular cliffs",
+        "small boat ovals",
+        "clear ripples",
+        "rough stone",
+        "dense foliage",
+        "light theme",
+        "round corners",
+        "calm motion",
+        "light brightness",
+        "high contrast"
+      ]
     },
     {
       "id": "landscapes_006",
       "category": "landscapes",
-      "path": "images/library/landscapes/electric_14.jpg",
-      "tags": []
+      "path": "images/library/landscapes/landscapes_006.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "2Hzmz15wGik",
+        "photographer": "pine watt",
+        "source_title": "Aerial forest",
+        "page_url": "https://unsplash.com/photos/2Hzmz15wGik",
+        "download_url": "https://images.unsplash.com/photo-1511884642898-4c92249e20b6?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 800,
+      "observed": {
+        "description": "A rocky river runs through a dark conifer valley with layers of pale fog above the trees.",
+        "color_words": [
+          "deep green",
+          "charcoal",
+          "mist gray",
+          "sage"
+        ],
+        "palette_hex": [
+          "#ccddcf",
+          "#0e1410",
+          "#59695b",
+          "#2c382a",
+          "#1f261b"
+        ],
+        "shapes": [
+          "winding river",
+          "triangular trees",
+          "soft fog layers"
+        ],
+        "textures": [
+          "conifer foliage",
+          "river foam",
+          "mist"
+        ],
+        "composition": "Central river recedes through dense trees toward a hazy background.",
+        "brightness": "dark",
+        "contrast": "medium"
+      },
+      "sha256": "e3490280aa040c081d1a5b696334b8621969b86530b00f0f4d164aa424d0f25d",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "mysterious",
+          "tranquil",
+          "immersive"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "translucent layers",
+          "subtle grain"
+        ],
+        "rationale": "Use deep greens, softened edges and translucent layers to echo forest depth and drifting fog.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "mysterious",
+        "tranquil",
+        "immersive",
+        "deep green",
+        "charcoal",
+        "mist gray",
+        "sage",
+        "winding river",
+        "triangular trees",
+        "soft fog layers",
+        "conifer foliage",
+        "river foam",
+        "mist",
+        "dark theme",
+        "round corners",
+        "calm motion",
+        "dark brightness",
+        "medium contrast"
+      ]
     },
     {
       "id": "landscapes_007",
       "category": "landscapes",
-      "path": "images/library/landscapes/electric_24.jpg",
-      "tags": []
+      "path": "images/library/landscapes/landscapes_007.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "_RBcxo9AU-U",
+        "photographer": "Robert Lukeman",
+        "source_title": "Green field at sunset",
+        "page_url": "https://unsplash.com/photos/_RBcxo9AU-U",
+        "download_url": "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 800,
+      "observed": {
+        "description": "Bright green hills frame a circular grassy formation and a low golden sun beneath a blue sky.",
+        "color_words": [
+          "lime green",
+          "gold",
+          "blue",
+          "dark olive"
+        ],
+        "palette_hex": [
+          "#23341a",
+          "#3c5e3e",
+          "#6d8340",
+          "#9baa47",
+          "#c3cc58"
+        ],
+        "shapes": [
+          "circular ring",
+          "rolling hills",
+          "radiating sky"
+        ],
+        "textures": [
+          "grass",
+          "scattered stones",
+          "streaked clouds"
+        ],
+        "composition": "Centered circular foreground motif with a sunset aligned behind the valley.",
+        "brightness": "light",
+        "contrast": "high"
+      },
+      "sha256": "bfe443b187db7a0ef7698232e871e9a67188c5f31a8fbf257f434e1574995cf5",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "vibrant",
+          "hopeful",
+          "expansive"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "bold gradient",
+          "soft shadow"
+        ],
+        "rationale": "Use lively green and golden accents with circular motifs and expansive spacing.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "vibrant",
+        "hopeful",
+        "expansive",
+        "lime green",
+        "gold",
+        "blue",
+        "dark olive",
+        "circular ring",
+        "rolling hills",
+        "radiating sky",
+        "grass",
+        "scattered stones",
+        "streaked clouds",
+        "light theme",
+        "round corners",
+        "calm motion",
+        "light brightness",
+        "high contrast"
+      ]
     },
     {
       "id": "landscapes_008",
       "category": "landscapes",
-      "path": "images/library/landscapes/midnight_01.jpg",
-      "tags": []
+      "path": "images/library/landscapes/landscapes_008.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "1Z2niiBPg5A",
+        "photographer": "v2osk",
+        "source_title": "Foggy mountain summit",
+        "page_url": "https://unsplash.com/photos/1Z2niiBPg5A",
+        "download_url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 715,
+      "observed": {
+        "description": "Low mist crosses a grassy ridge and winding road while sunlight breaks through clouds.",
+        "color_words": [
+          "muted olive",
+          "gray",
+          "pale gold",
+          "blue gray"
+        ],
+        "palette_hex": [
+          "#545843",
+          "#363930",
+          "#949a9a",
+          "#727b76",
+          "#c4c6b5"
+        ],
+        "shapes": [
+          "long ridge",
+          "winding road",
+          "cloud bands"
+        ],
+        "textures": [
+          "coarse grass",
+          "rock faces",
+          "mist"
+        ],
+        "composition": "Sweeping ridge leads from the left foreground toward a distant glowing sky.",
+        "brightness": "mixed",
+        "contrast": "medium"
+      },
+      "sha256": "9398f222ad4d603e2def0cd963722f3715ce2330dc67f6716639344b2fe9a278",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "contemplative",
+          "rugged",
+          "atmospheric"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "soft",
+        "motion": "calm",
+        "effects": [
+          "subtle grain",
+          "subtle gradient"
+        ],
+        "rationale": "Combine muted olive and gray with broad layered sections and restrained warm highlights.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "contemplative",
+        "rugged",
+        "atmospheric",
+        "muted olive",
+        "gray",
+        "pale gold",
+        "blue gray",
+        "long ridge",
+        "winding road",
+        "cloud bands",
+        "coarse grass",
+        "rock faces",
+        "mist",
+        "dark theme",
+        "soft corners",
+        "calm motion",
+        "mixed brightness",
+        "medium contrast"
+      ]
     },
     {
       "id": "landscapes_009",
       "category": "landscapes",
-      "path": "images/library/landscapes/midnight_11.jpg",
-      "tags": []
+      "path": "images/library/landscapes/landscapes_009.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "Bkci_8qcdvQ",
+        "photographer": "Kalen Emsley",
+        "source_title": "Snow-capped mountain",
+        "page_url": "https://unsplash.com/photos/Bkci_8qcdvQ",
+        "download_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 800,
+      "observed": {
+        "description": "A forested mountain valley opens toward distant snowy peaks beneath blue sky and white clouds.",
+        "color_words": [
+          "pine green",
+          "sky blue",
+          "snow white",
+          "stone gray"
+        ],
+        "palette_hex": [
+          "#1c211b",
+          "#3e5455",
+          "#5d7b85",
+          "#89a1ae",
+          "#bdc7cb"
+        ],
+        "shapes": [
+          "jagged peaks",
+          "vertical pines",
+          "layered valley"
+        ],
+        "textures": [
+          "rock",
+          "needles",
+          "clouds"
+        ],
+        "composition": "Deep landscape framed by foreground pines and successive mountain layers.",
+        "brightness": "light",
+        "contrast": "high"
+      },
+      "sha256": "0eda0af80c79973eaecda9331c31dc9863edb4452812d1978d327cce517df6b1",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "majestic",
+          "fresh",
+          "adventurous"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "soft",
+        "motion": "calm",
+        "effects": [
+          "layered surfaces",
+          "soft shadow"
+        ],
+        "rationale": "Use cool blue and green accents with structured sections softened by generous spacing.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "majestic",
+        "fresh",
+        "adventurous",
+        "pine green",
+        "sky blue",
+        "snow white",
+        "stone gray",
+        "jagged peaks",
+        "vertical pines",
+        "layered valley",
+        "rock",
+        "needles",
+        "clouds",
+        "light theme",
+        "soft corners",
+        "calm motion",
+        "light brightness",
+        "high contrast"
+      ]
     },
     {
       "id": "landscapes_010",
       "category": "landscapes",
-      "path": "images/library/landscapes/midnight_21.jpg",
-      "tags": []
+      "path": "images/library/landscapes/landscapes_010.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "zAjdgNXsMeg",
+        "photographer": "Luca Bravo",
+        "source_title": "House beside mountain lake",
+        "page_url": "https://unsplash.com/photos/zAjdgNXsMeg",
+        "download_url": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 800,
+      "observed": {
+        "description": "A wooden lakeside cabin sits before still mountain reflections, dark forest and low clouds.",
+        "color_words": [
+          "teal",
+          "forest green",
+          "warm brown",
+          "cloud gray"
+        ],
+        "palette_hex": [
+          "#c3c7c8",
+          "#929591",
+          "#1a231c",
+          "#354b44",
+          "#606760"
+        ],
+        "shapes": [
+          "mirrored mountains",
+          "rectangular cabin",
+          "soft cloud bands"
+        ],
+        "textures": [
+          "weathered wood",
+          "smooth water",
+          "forest"
+        ],
+        "composition": "Cabin sits to the lower right while the lake reflects the mountain across the center.",
+        "brightness": "mixed",
+        "contrast": "medium"
+      },
+      "sha256": "213ab493ac736c3a98a9e22a10de5fe56c42b37a87460e18069ebb570a0591f2",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "cozy",
+          "peaceful",
+          "reflective"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "paper surface",
+          "soft shadow"
+        ],
+        "rationale": "Use muted teal, warm wood accents and calm symmetrical sections with rounded cards.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "cozy",
+        "peaceful",
+        "reflective",
+        "teal",
+        "forest green",
+        "warm brown",
+        "cloud gray",
+        "mirrored mountains",
+        "rectangular cabin",
+        "soft cloud bands",
+        "weathered wood",
+        "smooth water",
+        "forest",
+        "light theme",
+        "round corners",
+        "calm motion",
+        "mixed brightness",
+        "medium contrast"
+      ]
     },
     {
-      "id": "landscapes_011",
-      "category": "landscapes",
-      "path": "images/library/landscapes/ocean_06.jpg",
-      "tags": []
+      "id": "objects_001",
+      "category": "objects",
+      "path": "images/library/objects/objects_001.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "I2U87m3FIpQ",
+        "photographer": "Jocelyn Morales",
+        "source_title": "Stones on ceramic plate",
+        "page_url": "https://unsplash.com/photos/I2U87m3FIpQ",
+        "download_url": "https://images.unsplash.com/photo-1605116817845-efa88545b509?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 800,
+      "height": 1200,
+      "observed": {
+        "description": "Two golden-brown pears rest on a pale ceramic plate in strong diagonal sunlight and shadow.",
+        "color_words": [
+          "warm brown",
+          "cream",
+          "charcoal",
+          "taupe"
+        ],
+        "palette_hex": [
+          "#d7d6cd",
+          "#0e0d0c",
+          "#131311",
+          "#392417",
+          "#bca58c"
+        ],
+        "shapes": [
+          "pear curves",
+          "plate ellipse",
+          "diagonal shadow"
+        ],
+        "textures": [
+          "fruit skin",
+          "matte ceramic"
+        ],
+        "composition": "Portrait still life with pears clustered above a diagonal light-dark division.",
+        "brightness": "mixed",
+        "contrast": "high"
+      },
+      "sha256": "c21035b6f1ad4ec4a85041c885ab837248f4f90757efa8b049c3b9920c9eeead",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "earthy",
+          "quiet",
+          "refined"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "round",
+        "motion": "none",
+        "effects": [
+          "paper surface",
+          "hard shadow"
+        ],
+        "rationale": "Use warm neutrals, rounded cards and directional shadows inspired by the pears and ceramic plate.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "earthy",
+        "quiet",
+        "refined",
+        "warm brown",
+        "cream",
+        "charcoal",
+        "taupe",
+        "pear curves",
+        "plate ellipse",
+        "diagonal shadow",
+        "fruit skin",
+        "matte ceramic",
+        "light theme",
+        "round corners",
+        "none motion",
+        "mixed brightness",
+        "high contrast"
+      ]
     },
     {
-      "id": "landscapes_012",
-      "category": "landscapes",
-      "path": "images/library/landscapes/ocean_16.jpg",
-      "tags": []
+      "id": "objects_002",
+      "category": "objects",
+      "path": "images/library/objects/objects_002.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "7T12an8w_hQ",
+        "photographer": "Mary Skrynnikova",
+        "source_title": "White vases with red flowers",
+        "page_url": "https://unsplash.com/photos/7T12an8w_hQ",
+        "download_url": "https://images.unsplash.com/photo-1638303322325-ff70d6224a22?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 915,
+      "height": 1200,
+      "observed": {
+        "description": "Two off-white ceramic vases with thin red berry branches sit beside softly folded fabric in dim light.",
+        "color_words": [
+          "ivory",
+          "olive brown",
+          "deep red",
+          "warm gray"
+        ],
+        "palette_hex": [
+          "#322819",
+          "#594c37",
+          "#b0ae9d",
+          "#2a2114",
+          "#3a2a1a"
+        ],
+        "shapes": [
+          "rounded vessels",
+          "fine branching lines",
+          "fabric folds"
+        ],
+        "textures": [
+          "matte ceramic",
+          "soft cloth"
+        ],
+        "composition": "Asymmetric pair of vessels with tall branches and a narrow shaft of light.",
+        "brightness": "dark",
+        "contrast": "medium"
+      },
+      "sha256": "7edf2309389616dc6c6354cb2a220e5ac1389580c4704bbc79b7e09bfebfcd77",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "cozy",
+          "restrained",
+          "contemplative"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "soft shadow",
+          "subtle grain"
+        ],
+        "rationale": "Pair warm ivory surfaces with small red accents and gently rounded forms in a quiet spacious layout.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "cozy",
+        "restrained",
+        "contemplative",
+        "ivory",
+        "olive brown",
+        "deep red",
+        "warm gray",
+        "rounded vessels",
+        "fine branching lines",
+        "fabric folds",
+        "matte ceramic",
+        "soft cloth",
+        "dark theme",
+        "round corners",
+        "calm motion",
+        "dark brightness",
+        "medium contrast"
+      ]
     },
     {
-      "id": "landscapes_013",
-      "category": "landscapes",
-      "path": "images/library/landscapes/paper_05.jpg",
-      "tags": []
+      "id": "objects_003",
+      "category": "objects",
+      "path": "images/library/objects/objects_003.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "GVbH0T1uwJ0",
+        "photographer": "Jingxi Lau",
+        "source_title": "Blue glass pitcher with lemons",
+        "page_url": "https://unsplash.com/photos/GVbH0T1uwJ0",
+        "download_url": "https://images.unsplash.com/photo-1594902483580-4bf0f4df41d9?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 862,
+      "height": 1200,
+      "observed": {
+        "description": "Blue glass vessels and goblets sit with yellow lemons and oranges on white draped fabric.",
+        "color_words": [
+          "cobalt blue",
+          "yellow",
+          "orange",
+          "white"
+        ],
+        "palette_hex": [
+          "#bbc9d8",
+          "#29447f",
+          "#a7a297",
+          "#c7d6e2",
+          "#c8ccbc"
+        ],
+        "shapes": [
+          "round fruit",
+          "goblet curves",
+          "cylinders"
+        ],
+        "textures": [
+          "transparent glass",
+          "citrus peel",
+          "folded cloth"
+        ],
+        "composition": "Tall grouped still life with repeated blue vessels interleaved with bright fruit.",
+        "brightness": "light",
+        "contrast": "high"
+      },
+      "sha256": "c5982df187a27e59737017eefaa36a1c10d3964892191636d7ce5d74e1882c24",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "cheerful",
+          "fresh",
+          "expressive"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "glass surface",
+          "vivid accents"
+        ],
+        "rationale": "Use cobalt and citrus accents, rounded components and transparent layering for a bright playful direction.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "cheerful",
+        "fresh",
+        "expressive",
+        "cobalt blue",
+        "yellow",
+        "orange",
+        "white",
+        "round fruit",
+        "goblet curves",
+        "cylinders",
+        "transparent glass",
+        "citrus peel",
+        "folded cloth",
+        "light theme",
+        "round corners",
+        "calm motion",
+        "light brightness",
+        "high contrast"
+      ]
     },
     {
-      "id": "landscapes_014",
-      "category": "landscapes",
-      "path": "images/library/landscapes/paper_15.jpg",
-      "tags": []
+      "id": "objects_004",
+      "category": "objects",
+      "path": "images/library/objects/objects_004.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "4jsmBl30x_A",
+        "photographer": "Cristina Anne Costello",
+        "source_title": "Lemons on wooden table",
+        "page_url": "https://unsplash.com/photos/4jsmBl30x_A",
+        "download_url": "https://images.unsplash.com/photo-1609639643505-3c158a56de42?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 857,
+      "observed": {
+        "description": "Whole and sliced lemons with green leaves sit on wood in strong soft-edged daylight.",
+        "color_words": [
+          "lemon yellow",
+          "leaf green",
+          "gray brown"
+        ],
+        "palette_hex": [
+          "#70642e",
+          "#3e381e",
+          "#98955b",
+          "#dfe0b9",
+          "#c1c092"
+        ],
+        "shapes": [
+          "citrus circles",
+          "ovals",
+          "curved leaves"
+        ],
+        "textures": [
+          "citrus peel",
+          "translucent pulp",
+          "wood grain"
+        ],
+        "composition": "Close horizontal crop with a glowing lemon slice near the center.",
+        "brightness": "light",
+        "contrast": "high"
+      },
+      "sha256": "e4b8ca3be36ad4c19a939acfaada4ff88c4d8501aea0d6d021d9ef327ccbf0ac",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "fresh",
+          "sunny",
+          "inviting"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "soft shadow",
+          "subtle gradient"
+        ],
+        "rationale": "Use lemon and leaf accents with rounded controls and warm daylight-like surfaces.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "fresh",
+        "sunny",
+        "inviting",
+        "lemon yellow",
+        "leaf green",
+        "gray brown",
+        "citrus circles",
+        "ovals",
+        "curved leaves",
+        "citrus peel",
+        "translucent pulp",
+        "wood grain",
+        "light theme",
+        "round corners",
+        "calm motion",
+        "light brightness",
+        "high contrast"
+      ]
     },
     {
-      "id": "landscapes_015",
-      "category": "landscapes",
-      "path": "images/library/landscapes/paper_25.jpg",
-      "tags": []
+      "id": "objects_005",
+      "category": "objects",
+      "path": "images/library/objects/objects_005.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "cNGUw-CEsp0",
+        "photographer": "Tirza van Dijk",
+        "source_title": "Pink flower",
+        "page_url": "https://unsplash.com/photos/cNGUw-CEsp0",
+        "download_url": "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 801,
+      "height": 1200,
+      "observed": {
+        "description": "A single pink rose in a clear square glass bottle stands against a muted rose wall crossed by sunlight.",
+        "color_words": [
+          "dusty pink",
+          "rose",
+          "leaf green",
+          "clear gray"
+        ],
+        "palette_hex": [
+          "#be9f93",
+          "#372722",
+          "#927569",
+          "#46322f",
+          "#563e3a"
+        ],
+        "shapes": [
+          "petal spirals",
+          "thin stem",
+          "square bottle"
+        ],
+        "textures": [
+          "soft petals",
+          "transparent glass",
+          "fine wall grain"
+        ],
+        "composition": "Sparse portrait composition leaves generous negative space around one flower.",
+        "brightness": "mixed",
+        "contrast": "medium"
+      },
+      "sha256": "0fd235d7a35e6b32f9e11bfed0bbb40cc3f4d3e944531fdb15f718c463b3136a",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "romantic",
+          "delicate",
+          "quiet"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "soft",
+        "motion": "calm",
+        "effects": [
+          "soft shadow",
+          "glass surface"
+        ],
+        "rationale": "Use dusty pink, delicate outlines and spacious composition with slow gentle reveals.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "romantic",
+        "delicate",
+        "quiet",
+        "dusty pink",
+        "rose",
+        "leaf green",
+        "clear gray",
+        "petal spirals",
+        "thin stem",
+        "square bottle",
+        "soft petals",
+        "transparent glass",
+        "fine wall grain",
+        "light theme",
+        "soft corners",
+        "calm motion",
+        "mixed brightness",
+        "medium contrast"
+      ]
     },
     {
-      "id": "landscapes_016",
-      "category": "landscapes",
-      "path": "images/library/landscapes/rose_07.jpg",
-      "tags": []
+      "id": "objects_006",
+      "category": "objects",
+      "path": "images/library/objects/objects_006.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "gN-r3UPfajY",
+        "photographer": "Zoltan Tasi",
+        "source_title": "Flowers in black ceramic vase",
+        "page_url": "https://unsplash.com/photos/gN-r3UPfajY",
+        "download_url": "https://images.unsplash.com/photo-1630367837606-8685ed284448?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 839,
+      "height": 1200,
+      "observed": {
+        "description": "Cream and golden roses sit in a dark rounded vase on a wooden table against deep green shadows.",
+        "color_words": [
+          "deep green",
+          "gold",
+          "cream",
+          "brown"
+        ],
+        "palette_hex": [
+          "#2a2a1e",
+          "#343528",
+          "#1b1f16",
+          "#b79853",
+          "#6b502c"
+        ],
+        "shapes": [
+          "ruffled petals",
+          "rounded vase",
+          "straight table edge"
+        ],
+        "textures": [
+          "layered petals",
+          "aged metal",
+          "wood grain"
+        ],
+        "composition": "Flowers form a compact focal cluster against a large dark background.",
+        "brightness": "dark",
+        "contrast": "high"
+      },
+      "sha256": "bbea1cd22b296b4096d32f9d41793b863f3d6d63c3768bd651c0467819e5a157",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "intimate",
+          "classic",
+          "warm"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "soft glow",
+          "subtle grain"
+        ],
+        "rationale": "Use deep green surfaces, warm gold accents and rounded forms with restrained editorial styling.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "intimate",
+        "classic",
+        "warm",
+        "deep green",
+        "gold",
+        "cream",
+        "brown",
+        "ruffled petals",
+        "rounded vase",
+        "straight table edge",
+        "layered petals",
+        "aged metal",
+        "wood grain",
+        "dark theme",
+        "round corners",
+        "calm motion",
+        "dark brightness",
+        "high contrast"
+      ]
     },
     {
-      "id": "landscapes_017",
-      "category": "landscapes",
-      "path": "images/library/landscapes/rose_17.jpg",
-      "tags": []
+      "id": "objects_007",
+      "category": "objects",
+      "path": "images/library/objects/objects_007.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "fDUj3kXilHQ",
+        "photographer": "Roberta Sorge",
+        "source_title": "Three red apples",
+        "page_url": "https://unsplash.com/photos/fDUj3kXilHQ",
+        "download_url": "https://images.unsplash.com/photo-1477830530828-c849c4b9bf2d?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 800,
+      "height": 1200,
+      "observed": {
+        "description": "Three red apples lie beside a blue patterned cloth on a dark mottled surface.",
+        "color_words": [
+          "burgundy",
+          "red",
+          "dark brown",
+          "blue white"
+        ],
+        "palette_hex": [
+          "#2a1f15",
+          "#131009",
+          "#422d25",
+          "#8c8280",
+          "#36110d"
+        ],
+        "shapes": [
+          "rounded fruit",
+          "folded cloth",
+          "irregular grouping"
+        ],
+        "textures": [
+          "apple skin",
+          "woven cloth",
+          "rough surface"
+        ],
+        "composition": "Three apples form a loose triangle within a dark close-cropped still life.",
+        "brightness": "dark",
+        "contrast": "high"
+      },
+      "sha256": "3b32891871a1842d7c374c56a3dd78b4c6d3347ac6c68f8ffddad8046b815e84",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "rustic",
+          "grounded",
+          "rich"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "round",
+        "motion": "none",
+        "effects": [
+          "paper surface",
+          "subtle grain"
+        ],
+        "rationale": "Use deep red accents, tactile surfaces and rounded cards with a grounded compact grouping.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "rustic",
+        "grounded",
+        "rich",
+        "burgundy",
+        "red",
+        "dark brown",
+        "blue white",
+        "rounded fruit",
+        "folded cloth",
+        "irregular grouping",
+        "apple skin",
+        "woven cloth",
+        "rough surface",
+        "dark theme",
+        "round corners",
+        "none motion",
+        "dark brightness",
+        "high contrast"
+      ]
     },
     {
-      "id": "landscapes_018",
-      "category": "landscapes",
-      "path": "images/library/landscapes/sage_03.jpg",
-      "tags": []
+      "id": "objects_008",
+      "category": "objects",
+      "path": "images/library/objects/objects_008.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "foeTT7H7SuA",
+        "photographer": "Jocelyn Morales",
+        "source_title": "White ceramic mug",
+        "page_url": "https://unsplash.com/photos/foeTT7H7SuA",
+        "download_url": "https://images.unsplash.com/photo-1608415123476-aca7a5da0abe?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 800,
+      "height": 1200,
+      "observed": {
+        "description": "A white cup of dark coffee rests on a pale surface cut by a large diagonal black shadow.",
+        "color_words": [
+          "white",
+          "black",
+          "coffee brown",
+          "cream"
+        ],
+        "palette_hex": [
+          "#191817",
+          "#060606",
+          "#efece9",
+          "#edeae6",
+          "#9c968c"
+        ],
+        "shapes": [
+          "cup circle",
+          "handle loop",
+          "diagonal shadow"
+        ],
+        "textures": [
+          "smooth ceramic",
+          "still liquid"
+        ],
+        "composition": "Single cup near the lower center balances large geometric areas of light and shadow.",
+        "brightness": "mixed",
+        "contrast": "high"
+      },
+      "sha256": "ee4d6a72cb048260dc9c46ec4828e339527e3d21901ed15d536501330db214eb",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "focused",
+          "minimal",
+          "calm"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "round",
+        "motion": "none",
+        "effects": [
+          "hard shadow",
+          "flat surfaces"
+        ],
+        "rationale": "Use a monochrome layout with generous whitespace, circular details and deliberate directional shadows.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "focused",
+        "minimal",
+        "calm",
+        "white",
+        "black",
+        "coffee brown",
+        "cream",
+        "cup circle",
+        "handle loop",
+        "diagonal shadow",
+        "smooth ceramic",
+        "still liquid",
+        "light theme",
+        "round corners",
+        "none motion",
+        "mixed brightness",
+        "high contrast"
+      ]
     },
     {
-      "id": "landscapes_019",
-      "category": "landscapes",
-      "path": "images/library/landscapes/sage_13.jpg",
-      "tags": []
+      "id": "objects_009",
+      "category": "objects",
+      "path": "images/library/objects/objects_009.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "GnyXnZmzYgs",
+        "photographer": "Townsend Walton",
+        "source_title": "Green pitcher beside oranges",
+        "page_url": "https://unsplash.com/photos/GnyXnZmzYgs",
+        "download_url": "https://images.unsplash.com/photo-1641083993161-4240941837e6?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 917,
+      "height": 1200,
+      "observed": {
+        "description": "A mottled green ceramic pitcher stands behind three oranges against a vivid red background.",
+        "color_words": [
+          "deep red",
+          "sage green",
+          "orange",
+          "cream"
+        ],
+        "palette_hex": [
+          "#380910",
+          "#7d1019",
+          "#ae844d",
+          "#694925",
+          "#cdaa74"
+        ],
+        "shapes": [
+          "bulging vessel",
+          "loop handle",
+          "fruit circles"
+        ],
+        "textures": [
+          "glazed ceramic",
+          "citrus skin",
+          "rough backdrop"
+        ],
+        "composition": "Central pitcher forms a tall anchor above a horizontal row of fruit.",
+        "brightness": "mixed",
+        "contrast": "high"
+      },
+      "sha256": "13553af93ac7b615f74cee1216d8b5871a121003d0dcc4cce22d6e2e7f85f60b",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "bold",
+          "warm",
+          "tactile"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "round",
+        "motion": "none",
+        "effects": [
+          "paper surface",
+          "vivid accents"
+        ],
+        "rationale": "Pair a warm red backdrop with sage and orange details and rounded tactile components.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "bold",
+        "warm",
+        "tactile",
+        "deep red",
+        "sage green",
+        "orange",
+        "cream",
+        "bulging vessel",
+        "loop handle",
+        "fruit circles",
+        "glazed ceramic",
+        "citrus skin",
+        "rough backdrop",
+        "light theme",
+        "round corners",
+        "none motion",
+        "mixed brightness",
+        "high contrast"
+      ]
     },
     {
-      "id": "landscapes_020",
-      "category": "landscapes",
-      "path": "images/library/landscapes/sage_23.jpg",
-      "tags": []
+      "id": "objects_010",
+      "category": "objects",
+      "path": "images/library/objects/objects_010.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "BT7fTyug9hA",
+        "photographer": "Hamideh Jafari",
+        "source_title": "Flowers in blue ceramic vase",
+        "page_url": "https://unsplash.com/photos/BT7fTyug9hA",
+        "download_url": "https://images.unsplash.com/photo-1624211290689-cdfb3c9ee0c2?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 961,
+      "height": 1200,
+      "observed": {
+        "description": "Sunflowers and green leaves in a ribbed pale vase sit with cut lemons on a weathered wooden chest.",
+        "color_words": [
+          "sunflower yellow",
+          "olive green",
+          "warm beige",
+          "brown"
+        ],
+        "palette_hex": [
+          "#83684a",
+          "#3c2a1a",
+          "#674731",
+          "#977c58",
+          "#b79b55"
+        ],
+        "shapes": [
+          "flower disks",
+          "petal rays",
+          "rounded vase"
+        ],
+        "textures": [
+          "wood grain",
+          "ribbed ceramic",
+          "petals"
+        ],
+        "composition": "Centered bouquet above a horizontal wooden base with a softly mottled wall behind.",
+        "brightness": "mixed",
+        "contrast": "medium"
+      },
+      "sha256": "315fbda6804c08988d8c36340786d80b42457ba12d703707f9233dd2c761f868",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "welcoming",
+          "rustic",
+          "optimistic"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "paper surface",
+          "soft shadow"
+        ],
+        "rationale": "Use warm beige, sunflower accents and rounded cards with subtle texture and relaxed spacing.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "welcoming",
+        "rustic",
+        "optimistic",
+        "sunflower yellow",
+        "olive green",
+        "warm beige",
+        "brown",
+        "flower disks",
+        "petal rays",
+        "rounded vase",
+        "wood grain",
+        "ribbed ceramic",
+        "petals",
+        "light theme",
+        "round corners",
+        "calm motion",
+        "mixed brightness",
+        "medium contrast"
+      ]
     },
     {
-      "id": "landscapes_021",
-      "category": "landscapes",
-      "path": "images/library/landscapes/sunlit_10.jpg",
-      "tags": []
+      "id": "animals_001",
+      "category": "animals",
+      "path": "images/library/animals/animals_001.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "mEdKuPYJe1I",
+        "photographer": "Alexander Andrews",
+        "source_title": "Orange and silver fox",
+        "page_url": "https://unsplash.com/photos/mEdKuPYJe1I",
+        "download_url": "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 820,
+      "height": 1200,
+      "observed": {
+        "description": "A red fox sits upright on a dark path, its orange fur lit against a soft gray-green background.",
+        "color_words": [
+          "burnt orange",
+          "charcoal",
+          "cream",
+          "gray green"
+        ],
+        "palette_hex": [
+          "#121a1b",
+          "#32302b",
+          "#615a4d",
+          "#938b76",
+          "#d4cdba"
+        ],
+        "shapes": [
+          "pointed ears",
+          "tapered muzzle",
+          "rounded seated body"
+        ],
+        "textures": [
+          "thick fur",
+          "gravel",
+          "soft background blur"
+        ],
+        "composition": "Centered portrait with a bright face against a dark lower frame and blurred background.",
+        "brightness": "dark",
+        "contrast": "high"
+      },
+      "sha256": "4c26c91bb20a70a7588ab4443fcd3737de046a6b7469764cf2feb580cc3ba882",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "alert",
+          "intimate",
+          "woodland"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "soft",
+        "motion": "calm",
+        "effects": [
+          "soft shadow",
+          "subtle grain"
+        ],
+        "rationale": "Use charcoal surfaces and burnt-orange accents with soft cards and a focused central composition.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "alert",
+        "intimate",
+        "woodland",
+        "burnt orange",
+        "charcoal",
+        "cream",
+        "gray green",
+        "pointed ears",
+        "tapered muzzle",
+        "rounded seated body",
+        "thick fur",
+        "gravel",
+        "soft background blur",
+        "dark theme",
+        "soft corners",
+        "calm motion",
+        "dark brightness",
+        "high contrast"
+      ]
     },
     {
-      "id": "landscapes_022",
-      "category": "landscapes",
-      "path": "images/library/landscapes/sunlit_20.jpg",
-      "tags": []
+      "id": "animals_002",
+      "category": "animals",
+      "path": "images/library/animals/animals_002.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "Iw12lY3koDk",
+        "photographer": "Andreas Rasmussen",
+        "source_title": "Deer in grassy field",
+        "page_url": "https://unsplash.com/photos/Iw12lY3koDk",
+        "download_url": "https://images.unsplash.com/photo-1519664824562-b4bc73f9795a?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 675,
+      "height": 1200,
+      "observed": {
+        "description": "An antlered deer faces the camera in a dry grassy setting with dark trees and pale sky behind.",
+        "color_words": [
+          "tan",
+          "warm brown",
+          "olive",
+          "pale blue"
+        ],
+        "palette_hex": [
+          "#74674e",
+          "#443c2c",
+          "#9c8d73",
+          "#e7e6e0",
+          "#c7c5ba"
+        ],
+        "shapes": [
+          "branching antlers",
+          "pointed ears",
+          "rounded muzzle"
+        ],
+        "textures": [
+          "coarse fur",
+          "dry grass",
+          "bark"
+        ],
+        "composition": "Tall portrait centers the face beneath a large branching antler silhouette.",
+        "brightness": "mixed",
+        "contrast": "medium"
+      },
+      "sha256": "fcdb20d554290530a03d6ee0b6a21542535706752e9a3f3b3fafc52238c83a43",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "grounded",
+          "stately",
+          "natural"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "soft",
+        "motion": "none",
+        "effects": [
+          "paper surface",
+          "thin outlines"
+        ],
+        "rationale": "Use warm earth colors and fine branching details within a spacious understated layout.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "grounded",
+        "stately",
+        "natural",
+        "tan",
+        "warm brown",
+        "olive",
+        "pale blue",
+        "branching antlers",
+        "pointed ears",
+        "rounded muzzle",
+        "coarse fur",
+        "dry grass",
+        "bark",
+        "light theme",
+        "soft corners",
+        "none motion",
+        "mixed brightness",
+        "medium contrast"
+      ]
     },
     {
-      "id": "landscapes_023",
-      "category": "landscapes",
-      "path": "images/library/landscapes/terracotta_02.jpg",
-      "tags": []
+      "id": "animals_003",
+      "category": "animals",
+      "path": "images/library/animals/animals_003.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "lyvCvA8sKGc",
+        "photographer": "Boris Smokrovic",
+        "source_title": "Butterfly on orange flower",
+        "page_url": "https://unsplash.com/photos/lyvCvA8sKGc",
+        "download_url": "https://images.unsplash.com/photo-1475809913362-28a064062ccd?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 800,
+      "observed": {
+        "description": "An orange butterfly with black and white wing markings rests on small orange flowers against a warm blurred background.",
+        "color_words": [
+          "orange",
+          "amber",
+          "black",
+          "white"
+        ],
+        "palette_hex": [
+          "#bb6229",
+          "#c48344",
+          "#824d27",
+          "#cc9552",
+          "#f5b96a"
+        ],
+        "shapes": [
+          "wing arcs",
+          "fine antennae",
+          "small flower clusters"
+        ],
+        "textures": [
+          "fine wing veins",
+          "petals",
+          "soft blur"
+        ],
+        "composition": "Close side view places the patterned wing across the frame and flowers to the right.",
+        "brightness": "light",
+        "contrast": "high"
+      },
+      "sha256": "af2177022544b746120d586e05fe249df42567cae11bed793c55e68a64303c93",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "delicate",
+          "lively",
+          "warm"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "vivid accents",
+          "soft shadow"
+        ],
+        "rationale": "Use amber accents, rounded controls and small repeated details inspired by the butterfly's patterned wings.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "delicate",
+        "lively",
+        "warm",
+        "orange",
+        "amber",
+        "black",
+        "white",
+        "wing arcs",
+        "fine antennae",
+        "small flower clusters",
+        "fine wing veins",
+        "petals",
+        "soft blur",
+        "light theme",
+        "round corners",
+        "calm motion",
+        "light brightness",
+        "high contrast"
+      ]
     },
     {
-      "id": "landscapes_024",
-      "category": "landscapes",
-      "path": "images/library/landscapes/terracotta_12.jpg",
-      "tags": []
+      "id": "animals_004",
+      "category": "animals",
+      "path": "images/library/animals/animals_004.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "mpw37yXc_WQ",
+        "photographer": "Ray Hennessy",
+        "source_title": "Puffin bird",
+        "page_url": "https://unsplash.com/photos/mpw37yXc_WQ",
+        "download_url": "https://images.unsplash.com/photo-1490718720478-364a07a997cd?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 799,
+      "height": 1200,
+      "observed": {
+        "description": "A black-and-white puffin with an orange beak and feet stands front-facing on gray rock.",
+        "color_words": [
+          "black",
+          "white",
+          "orange",
+          "gray blue"
+        ],
+        "palette_hex": [
+          "#737c76",
+          "#979d98",
+          "#504c40",
+          "#b6bbb6",
+          "#cccfcc"
+        ],
+        "shapes": [
+          "oval body",
+          "triangular beak",
+          "short feet"
+        ],
+        "textures": [
+          "feathers",
+          "rough rock",
+          "soft blur"
+        ],
+        "composition": "Centered upright bird forms a simple bold silhouette against an out-of-focus background.",
+        "brightness": "light",
+        "contrast": "high"
+      },
+      "sha256": "d95721b960b690ba0bd27f2cc8e1099ad4a7079d5321268b40c7eb57112f278a",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "playful",
+          "crisp",
+          "friendly"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "flat surfaces",
+          "small bright accents"
+        ],
+        "rationale": "Use a clean monochrome foundation, orange highlights and friendly rounded components.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "playful",
+        "crisp",
+        "friendly",
+        "black",
+        "white",
+        "orange",
+        "gray blue",
+        "oval body",
+        "triangular beak",
+        "short feet",
+        "feathers",
+        "rough rock",
+        "soft blur",
+        "light theme",
+        "round corners",
+        "calm motion",
+        "light brightness",
+        "high contrast"
+      ]
     },
     {
-      "id": "landscapes_025",
-      "category": "landscapes",
-      "path": "images/library/landscapes/terracotta_22.jpg",
-      "tags": []
+      "id": "animals_005",
+      "category": "animals",
+      "path": "images/library/animals/animals_005.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "25JxltstHSc",
+        "photographer": "Edrick Krozendijk",
+        "source_title": "Pink flamingo close-up",
+        "page_url": "https://unsplash.com/photos/25JxltstHSc",
+        "download_url": "https://images.unsplash.com/photo-1629394661462-13ea8fe156ef?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 800,
+      "height": 1200,
+      "observed": {
+        "description": "A coral-pink flamingo bends its long neck into a loop while preening against turquoise water.",
+        "color_words": [
+          "coral",
+          "blush pink",
+          "turquoise",
+          "black"
+        ],
+        "palette_hex": [
+          "#c3ccc9",
+          "#d99388",
+          "#6fc1d2",
+          "#be4f45",
+          "#a19094"
+        ],
+        "shapes": [
+          "looped neck",
+          "layered feather curves",
+          "curved beak"
+        ],
+        "textures": [
+          "soft feathers",
+          "smooth blurred water"
+        ],
+        "composition": "Close portrait fills the frame with a sweeping neck and layered pink feathers.",
+        "brightness": "light",
+        "contrast": "high"
+      },
+      "sha256": "a23c31ca954102cf3910090ee7983eb6cd6739f655faa014bdd348ef60f21e42",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "graceful",
+          "expressive",
+          "tropical"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "bold gradient",
+          "soft shadow"
+        ],
+        "rationale": "Use coral and turquoise with sweeping curves and smooth flowing transitions.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "graceful",
+        "expressive",
+        "tropical",
+        "coral",
+        "blush pink",
+        "turquoise",
+        "black",
+        "looped neck",
+        "layered feather curves",
+        "curved beak",
+        "soft feathers",
+        "smooth blurred water",
+        "light theme",
+        "round corners",
+        "calm motion",
+        "light brightness",
+        "high contrast"
+      ]
     },
     {
-      "id": "textures_001",
-      "category": "textures",
-      "path": "images/library/textures/amber_09.jpg",
-      "tags": []
+      "id": "animals_006",
+      "category": "animals",
+      "path": "images/library/animals/animals_006.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "dGMcpbzcq1I",
+        "photographer": "Smit Patel",
+        "source_title": "White tiger at night",
+        "page_url": "https://unsplash.com/photos/dGMcpbzcq1I",
+        "download_url": "https://images.unsplash.com/photo-1503066211613-c17ebc9daef0?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 800,
+      "observed": {
+        "description": "A white tiger with dark stripes reclines across the ground amid shadowed green foliage.",
+        "color_words": [
+          "ivory",
+          "black",
+          "deep green",
+          "earth brown"
+        ],
+        "palette_hex": [
+          "#1f1f1f",
+          "#2f372a",
+          "#94948b",
+          "#23241f",
+          "#1e231e"
+        ],
+        "shapes": [
+          "long horizontal body",
+          "curved stripes",
+          "rounded paws"
+        ],
+        "textures": [
+          "fur",
+          "leaves",
+          "soil"
+        ],
+        "composition": "Reclining animal spans the lower frame against a dense dark leafy background.",
+        "brightness": "dark",
+        "contrast": "high"
+      },
+      "sha256": "f7cc3b051c94b5b778bc5396e6f300a33351f95df62ce08e16c76c34272d6d32",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "composed",
+          "powerful",
+          "mysterious"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "soft",
+        "motion": "none",
+        "effects": [
+          "high contrast",
+          "subtle grain"
+        ],
+        "rationale": "Use deep green and ivory with bold linear accents and stable spacious cards.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "composed",
+        "powerful",
+        "mysterious",
+        "ivory",
+        "black",
+        "deep green",
+        "earth brown",
+        "long horizontal body",
+        "curved stripes",
+        "rounded paws",
+        "fur",
+        "leaves",
+        "soil",
+        "dark theme",
+        "soft corners",
+        "none motion",
+        "dark brightness",
+        "high contrast"
+      ]
     },
     {
-      "id": "textures_002",
-      "category": "textures",
-      "path": "images/library/textures/amber_19.jpg",
-      "tags": []
+      "id": "animals_007",
+      "category": "animals",
+      "path": "images/library/animals/animals_007.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "eqXiLNfZDc0",
+        "photographer": "Zden\u011bk Mach\u00e1\u010dek",
+        "source_title": "Black and yellow bird on branch",
+        "page_url": "https://unsplash.com/photos/eqXiLNfZDc0",
+        "download_url": "https://images.unsplash.com/photo-1550853024-fae8cd4be47f?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 1184,
+      "observed": {
+        "description": "A black-and-yellow toucan with a multicolored beak perches on a mossy branch against blurred green foliage.",
+        "color_words": [
+          "yellow",
+          "black",
+          "lime green",
+          "cyan",
+          "red"
+        ],
+        "palette_hex": [
+          "#414f34",
+          "#2c3527",
+          "#1c1f19",
+          "#6d7a3a",
+          "#373a28"
+        ],
+        "shapes": [
+          "long curved beak",
+          "rounded torso",
+          "horizontal branch"
+        ],
+        "textures": [
+          "feathers",
+          "moss",
+          "rain streaks"
+        ],
+        "composition": "Side-on bird sits on a horizontal branch with a large colorful beak pointing left.",
+        "brightness": "dark",
+        "contrast": "high"
+      },
+      "sha256": "2e9240f5b912f8835c404273e6bf3d62a35cebc9b964568e3a479c79a400d9b2",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "exotic",
+          "vibrant",
+          "confident"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "round",
+        "motion": "kinetic",
+        "effects": [
+          "vivid accents",
+          "soft shadow"
+        ],
+        "rationale": "Use dark surfaces with controlled yellow, lime and cyan accents and rounded bold components.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "exotic",
+        "vibrant",
+        "confident",
+        "yellow",
+        "black",
+        "lime green",
+        "cyan",
+        "red",
+        "long curved beak",
+        "rounded torso",
+        "horizontal branch",
+        "feathers",
+        "moss",
+        "rain streaks",
+        "dark theme",
+        "round corners",
+        "kinetic motion",
+        "dark brightness",
+        "high contrast"
+      ]
     },
     {
-      "id": "textures_003",
-      "category": "textures",
-      "path": "images/library/textures/cobalt_08.jpg",
-      "tags": []
+      "id": "animals_008",
+      "category": "animals",
+      "path": "images/library/animals/animals_008.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "Sg3XwuEpybU",
+        "photographer": "Richard Brutyo",
+        "source_title": "Labrador holding yellow tulip",
+        "page_url": "https://unsplash.com/photos/Sg3XwuEpybU",
+        "download_url": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 748,
+      "height": 1200,
+      "observed": {
+        "description": "A golden dog sits on a stone patio holding a yellow flower across its mouth.",
+        "color_words": [
+          "golden tan",
+          "cream",
+          "muted green",
+          "yellow"
+        ],
+        "palette_hex": [
+          "#2c221f",
+          "#998977",
+          "#60493a",
+          "#aca999",
+          "#cad8d4"
+        ],
+        "shapes": [
+          "rounded face",
+          "drooping ears",
+          "thin flower stem"
+        ],
+        "textures": [
+          "soft fur",
+          "stone paving",
+          "wood fence"
+        ],
+        "composition": "Centered seated portrait with soft background separation and a small yellow focal accent.",
+        "brightness": "mixed",
+        "contrast": "medium"
+      },
+      "sha256": "6b0d312926c4ce6cd8cc888733f95220d89893b3f38f7a52d453a550034c5772",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "affectionate",
+          "gentle",
+          "welcoming"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "soft shadow",
+          "warm surfaces"
+        ],
+        "rationale": "Use warm cream and gold with rounded cards, friendly spacing and gentle transitions.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "affectionate",
+        "gentle",
+        "welcoming",
+        "golden tan",
+        "cream",
+        "muted green",
+        "yellow",
+        "rounded face",
+        "drooping ears",
+        "thin flower stem",
+        "soft fur",
+        "stone paving",
+        "wood fence",
+        "light theme",
+        "round corners",
+        "calm motion",
+        "mixed brightness",
+        "medium contrast"
+      ]
     },
     {
-      "id": "textures_004",
-      "category": "textures",
-      "path": "images/library/textures/cobalt_18.jpg",
-      "tags": []
+      "id": "animals_009",
+      "category": "animals",
+      "path": "images/library/animals/animals_009.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "yihlaRCCvd4",
+        "photographer": "Oscar Sutton",
+        "source_title": "Dog running on beach",
+        "page_url": "https://unsplash.com/photos/yihlaRCCvd4",
+        "download_url": "https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 801,
+      "height": 1200,
+      "observed": {
+        "description": "A wet golden-brown dog runs through white surf toward the camera beneath a pale sunset sky.",
+        "color_words": [
+          "golden brown",
+          "sea blue",
+          "white",
+          "pale peach"
+        ],
+        "palette_hex": [
+          "#a2c1d8",
+          "#fefefa",
+          "#665e54",
+          "#f1f0e6",
+          "#fafefc"
+        ],
+        "shapes": [
+          "flying ears",
+          "splash arcs",
+          "horizontal horizon"
+        ],
+        "textures": [
+          "wet fur",
+          "sea foam",
+          "pebbles"
+        ],
+        "composition": "Forward-moving centered subject contrasts with broad horizontal sea and sky bands.",
+        "brightness": "light",
+        "contrast": "high"
+      },
+      "sha256": "01ba9829423b43995f9152d553d28d7825cba2a724f3cd195fe0b9a228aae6e0",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "joyful",
+          "energetic",
+          "carefree"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "round",
+        "motion": "kinetic",
+        "effects": [
+          "bright accents",
+          "soft shadow"
+        ],
+        "rationale": "Use warm gold against ocean blue with rounded controls and buoyant short motion.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "joyful",
+        "energetic",
+        "carefree",
+        "golden brown",
+        "sea blue",
+        "white",
+        "pale peach",
+        "flying ears",
+        "splash arcs",
+        "horizontal horizon",
+        "wet fur",
+        "sea foam",
+        "pebbles",
+        "light theme",
+        "round corners",
+        "kinetic motion",
+        "light brightness",
+        "high contrast"
+      ]
     },
     {
-      "id": "textures_005",
-      "category": "textures",
-      "path": "images/library/textures/electric_04.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_006",
-      "category": "textures",
-      "path": "images/library/textures/electric_14.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_007",
-      "category": "textures",
-      "path": "images/library/textures/electric_24.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_008",
-      "category": "textures",
-      "path": "images/library/textures/midnight_01.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_009",
-      "category": "textures",
-      "path": "images/library/textures/midnight_11.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_010",
-      "category": "textures",
-      "path": "images/library/textures/midnight_21.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_011",
-      "category": "textures",
-      "path": "images/library/textures/ocean_06.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_012",
-      "category": "textures",
-      "path": "images/library/textures/ocean_16.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_013",
-      "category": "textures",
-      "path": "images/library/textures/paper_05.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_014",
-      "category": "textures",
-      "path": "images/library/textures/paper_15.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_015",
-      "category": "textures",
-      "path": "images/library/textures/paper_25.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_016",
-      "category": "textures",
-      "path": "images/library/textures/rose_07.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_017",
-      "category": "textures",
-      "path": "images/library/textures/rose_17.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_018",
-      "category": "textures",
-      "path": "images/library/textures/sage_03.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_019",
-      "category": "textures",
-      "path": "images/library/textures/sage_13.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_020",
-      "category": "textures",
-      "path": "images/library/textures/sage_23.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_021",
-      "category": "textures",
-      "path": "images/library/textures/sunlit_10.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_022",
-      "category": "textures",
-      "path": "images/library/textures/sunlit_20.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_023",
-      "category": "textures",
-      "path": "images/library/textures/terracotta_02.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_024",
-      "category": "textures",
-      "path": "images/library/textures/terracotta_12.jpg",
-      "tags": []
-    },
-    {
-      "id": "textures_025",
-      "category": "textures",
-      "path": "images/library/textures/terracotta_22.jpg",
-      "tags": []
+      "id": "animals_010",
+      "category": "animals",
+      "path": "images/library/animals/animals_010.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "iSUccs7RhsM",
+        "photographer": "Uriel Soberanes",
+        "source_title": "Brown and black leopard",
+        "page_url": "https://unsplash.com/photos/iSUccs7RhsM",
+        "download_url": "https://images.unsplash.com/photo-1544979590-37e9b47eb705?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 800,
+      "height": 1200,
+      "observed": {
+        "description": "A spotted big cat with a pale blue eye fills the frame, looking left against a softly blurred neutral background.",
+        "color_words": [
+          "tan",
+          "black",
+          "cream",
+          "icy blue"
+        ],
+        "palette_hex": [
+          "#7a736b",
+          "#d6c9bc",
+          "#1c1b1b",
+          "#565049",
+          "#3f3e3d"
+        ],
+        "shapes": [
+          "rosette spots",
+          "curved face",
+          "fine whisker lines"
+        ],
+        "textures": [
+          "short fur",
+          "whiskers",
+          "soft blur"
+        ],
+        "composition": "Close portrait crops the animal at the right and emphasizes its eye and patterned coat.",
+        "brightness": "mixed",
+        "contrast": "high"
+      },
+      "sha256": "7161b1c6c5183a8d635f77da9e40e42cec80528ec804a652f12cfe740757c6e6",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "intense",
+          "elegant",
+          "focused"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "soft",
+        "motion": "none",
+        "effects": [
+          "subtle grain",
+          "small bright accents"
+        ],
+        "rationale": "Use warm neutrals and dark surfaces with a precise icy-blue accent and restrained patterned details.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "intense",
+        "elegant",
+        "focused",
+        "tan",
+        "black",
+        "cream",
+        "icy blue",
+        "rosette spots",
+        "curved face",
+        "fine whisker lines",
+        "short fur",
+        "whiskers",
+        "soft blur",
+        "dark theme",
+        "soft corners",
+        "none motion",
+        "mixed brightness",
+        "high contrast"
+      ]
     },
     {
       "id": "patterns_001",
       "category": "patterns",
-      "path": "images/library/patterns/amber_09.jpg",
-      "tags": []
+      "path": "images/library/patterns/patterns_001.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "jR4Zf-riEjI",
+        "photographer": "Andrew Ridley",
+        "source_title": "Multicolored tile wall",
+        "page_url": "https://unsplash.com/photos/jR4Zf-riEjI",
+        "download_url": "https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 1200,
+      "height": 900,
+      "observed": {
+        "description": "Overlapping small pastel tiles form a repeating staggered diamond-like grid across a wall.",
+        "color_words": [
+          "pastel teal",
+          "dusty rose",
+          "cream",
+          "gray",
+          "yellow"
+        ],
+        "palette_hex": [
+          "#91908f",
+          "#99b1b0",
+          "#706a68",
+          "#b9ada5",
+          "#c1c3bc"
+        ],
+        "shapes": [
+          "repeating diamonds",
+          "staggered grid",
+          "small rounded corners"
+        ],
+        "textures": [
+          "matte tile",
+          "visible joints"
+        ],
+        "composition": "Edge-to-edge repeating pattern with varied colors and no single focal subject.",
+        "brightness": "light",
+        "contrast": "medium"
+      },
+      "sha256": "53e5625a4cf44b1b5f3f7475751dc635184a944aeff707eb0fc2e86e8e93c1d6",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "playful",
+          "balanced",
+          "handcrafted"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "soft",
+        "motion": "none",
+        "effects": [
+          "flat surfaces",
+          "subtle grain"
+        ],
+        "rationale": "Use muted multicolor accents and a regular modular grid with softly rounded corners.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "playful",
+        "balanced",
+        "handcrafted",
+        "pastel teal",
+        "dusty rose",
+        "cream",
+        "gray",
+        "yellow",
+        "repeating diamonds",
+        "staggered grid",
+        "small rounded corners",
+        "matte tile",
+        "visible joints",
+        "light theme",
+        "soft corners",
+        "none motion",
+        "light brightness",
+        "medium contrast"
+      ]
     },
     {
       "id": "patterns_002",
       "category": "patterns",
-      "path": "images/library/patterns/amber_19.jpg",
-      "tags": []
+      "path": "images/library/patterns/patterns_002.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "h-LcVG8W1XY",
+        "photographer": "Annie Spratt",
+        "source_title": "Blackboard surface",
+        "page_url": "https://unsplash.com/photos/h-LcVG8W1XY",
+        "download_url": "https://images.unsplash.com/photo-1528459061998-56fd57ad86e3?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 765,
+      "height": 1200,
+      "observed": {
+        "description": "A dark green woven surface shows fine regular fibers, faint pale scuffs and uneven worn patches.",
+        "color_words": [
+          "deep green",
+          "charcoal",
+          "gray green"
+        ],
+        "palette_hex": [
+          "#22302b",
+          "#1a231c",
+          "#293d39",
+          "#304644",
+          "#364f4d"
+        ],
+        "shapes": [
+          "fine crosshatch",
+          "irregular scuffs",
+          "faint diagonal creases"
+        ],
+        "textures": [
+          "woven fibers",
+          "worn surface",
+          "fine grain"
+        ],
+        "composition": "Close edge-to-edge crop has a regular fine weave beneath irregular lighter marks.",
+        "brightness": "dark",
+        "contrast": "low"
+      },
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "grounded",
+          "tactile",
+          "subdued"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "soft",
+        "motion": "none",
+        "effects": [
+          "subtle grain",
+          "flat surfaces"
+        ],
+        "rationale": "Use deep green surfaces, fine tactile texture and softly edged quiet components with restrained contrast.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "grounded",
+        "tactile",
+        "subdued",
+        "deep green",
+        "charcoal",
+        "gray green",
+        "fine crosshatch",
+        "irregular scuffs",
+        "faint diagonal creases",
+        "woven fibers",
+        "worn surface",
+        "fine grain",
+        "dark theme",
+        "soft corners",
+        "none motion",
+        "dark brightness",
+        "low contrast"
+      ],
+      "sha256": "02e4487f7027b7d715c91dd377b241d4f5a2ace84326e796d7170d38d2395e26"
     },
     {
       "id": "patterns_003",
       "category": "patterns",
-      "path": "images/library/patterns/cobalt_08.jpg",
-      "tags": []
+      "path": "images/library/patterns/patterns_003.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "GpiqJ8Po2g0",
+        "photographer": "Jon Tyson",
+        "source_title": "Black and white patterned wall",
+        "page_url": "https://unsplash.com/photos/GpiqJ8Po2g0",
+        "download_url": "https://images.unsplash.com/photo-1567609562303-974f34396acb?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 900,
+      "height": 1200,
+      "observed": {
+        "description": "Cream curving lines sweep and fan across a nearly black wall-like surface.",
+        "color_words": [
+          "black",
+          "cream",
+          "warm white"
+        ],
+        "palette_hex": [
+          "#090a0a",
+          "#d5cfc2",
+          "#171e20",
+          "#070a0a",
+          "#050606"
+        ],
+        "shapes": [
+          "branching curves",
+          "parallel lines",
+          "fan shapes"
+        ],
+        "textures": [
+          "flat painted surface",
+          "crisp edges"
+        ],
+        "composition": "High-contrast cropped pattern fills the frame with alternating dark gaps and light lines.",
+        "brightness": "dark",
+        "contrast": "high"
+      },
+      "sha256": "5d9bcba5566f4348889f3b282b691f2eb87cec8159a1bda3c0fc3239583685d0",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "bold",
+          "rhythmic",
+          "graphic"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "outline surfaces",
+          "high contrast"
+        ],
+        "rationale": "Use cream outlines on dark surfaces and curved repeating motifs with deliberate spacing.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "bold",
+        "rhythmic",
+        "graphic",
+        "black",
+        "cream",
+        "warm white",
+        "branching curves",
+        "parallel lines",
+        "fan shapes",
+        "flat painted surface",
+        "crisp edges",
+        "dark theme",
+        "round corners",
+        "calm motion",
+        "dark brightness",
+        "high contrast"
+      ]
     },
     {
       "id": "patterns_004",
       "category": "patterns",
-      "path": "images/library/patterns/cobalt_18.jpg",
-      "tags": []
+      "path": "images/library/patterns/patterns_004.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "R53t-Tg6J4c",
+        "photographer": "NordWood Themes",
+        "source_title": "White textured plaster",
+        "page_url": "https://unsplash.com/photos/R53t-Tg6J4c",
+        "download_url": "https://images.unsplash.com/photo-1604147706283-d7119b5b822c?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 800,
+      "height": 1200,
+      "observed": {
+        "description": "A nearly white plaster surface shows subtle irregular fine grain and very low tonal variation.",
+        "color_words": [
+          "white",
+          "off-white",
+          "pale gray"
+        ],
+        "palette_hex": [
+          "#f3f3f1",
+          "#efefed",
+          "#f0f0ee",
+          "#f1f1ef",
+          "#ececea"
+        ],
+        "shapes": [
+          "irregular fine speckles",
+          "soft granular field"
+        ],
+        "textures": [
+          "fine plaster",
+          "matte grain"
+        ],
+        "composition": "Even edge-to-edge texture without a focal point or strong directional structure.",
+        "brightness": "light",
+        "contrast": "low"
+      },
+      "sha256": "32efb118327b78d199b1a1e5f3156c22db4b2ce880bc9a62c80b1be9821044be",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "quiet",
+          "clean",
+          "understated"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "soft",
+        "motion": "none",
+        "effects": [
+          "subtle grain",
+          "flat surfaces"
+        ],
+        "rationale": "Use warm white backgrounds and very subtle grain with generous spacing and minimal decoration.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "quiet",
+        "clean",
+        "understated",
+        "white",
+        "off-white",
+        "pale gray",
+        "irregular fine speckles",
+        "soft granular field",
+        "fine plaster",
+        "matte grain",
+        "light theme",
+        "soft corners",
+        "none motion",
+        "light brightness",
+        "low contrast"
+      ]
     },
     {
       "id": "patterns_005",
       "category": "patterns",
-      "path": "images/library/patterns/electric_04.jpg",
-      "tags": []
+      "path": "images/library/patterns/patterns_005.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "NqXqLPhdbvU",
+        "photographer": "A. C.",
+        "source_title": "Frosted glass refracting color",
+        "page_url": "https://unsplash.com/photos/NqXqLPhdbvU",
+        "download_url": "https://images.unsplash.com/photo-1584384689201-e0bcbe2c7f1d?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 800,
+      "height": 1200,
+      "observed": {
+        "description": "Frosted glass blurs warm light, pale highlights and cool dark forms into a fine pebbled surface.",
+        "color_words": [
+          "pale gold",
+          "blue gray",
+          "charcoal",
+          "muted red"
+        ],
+        "palette_hex": [
+          "#4f535c",
+          "#24282e",
+          "#80827c",
+          "#eae4d6",
+          "#d2c7ab"
+        ],
+        "shapes": [
+          "soft color patches",
+          "fine pebble pattern",
+          "blurred silhouettes"
+        ],
+        "textures": [
+          "frosted glass",
+          "granular diffusion"
+        ],
+        "composition": "Portrait crop grades from a light upper area into darker cool tones below.",
+        "brightness": "mixed",
+        "contrast": "low"
+      },
+      "sha256": "5f596453f48a6069ce5b3fb3ad4fb8cfc14b110267dfa36aaa30733ea1d22678",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "atmospheric",
+          "soft",
+          "enigmatic"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "round",
+        "motion": "calm",
+        "effects": [
+          "frosted glass",
+          "subtle gradient"
+        ],
+        "rationale": "Use translucent frosted surfaces, softly blended colors and rounded layered panels.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "atmospheric",
+        "soft",
+        "enigmatic",
+        "pale gold",
+        "blue gray",
+        "charcoal",
+        "muted red",
+        "soft color patches",
+        "fine pebble pattern",
+        "blurred silhouettes",
+        "frosted glass",
+        "granular diffusion",
+        "dark theme",
+        "round corners",
+        "calm motion",
+        "mixed brightness",
+        "low contrast"
+      ]
     },
     {
       "id": "patterns_006",
       "category": "patterns",
-      "path": "images/library/patterns/electric_14.jpg",
-      "tags": []
+      "path": "images/library/patterns/patterns_006.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "UuBR5kbvt4Y",
+        "photographer": "Yan Ots",
+        "source_title": "Concrete wall",
+        "page_url": "https://unsplash.com/photos/UuBR5kbvt4Y",
+        "download_url": "https://images.unsplash.com/photo-1521459467264-802e2ef3141f?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 900,
+      "height": 1200,
+      "observed": {
+        "description": "A gray concrete surface has dense small pits and mottled lighter and darker areas.",
+        "color_words": [
+          "concrete gray",
+          "silver",
+          "charcoal"
+        ],
+        "palette_hex": [
+          "#959595",
+          "#9e9e9e",
+          "#888888",
+          "#a7a7a7",
+          "#b1b1b1"
+        ],
+        "shapes": [
+          "irregular speckles",
+          "diffuse patches",
+          "fine pits"
+        ],
+        "textures": [
+          "rough concrete",
+          "granular pores"
+        ],
+        "composition": "Uniform close-up texture with small-scale variation and no focal object.",
+        "brightness": "mixed",
+        "contrast": "low"
+      },
+      "sha256": "1859cbd970b5056c77e090ca77de211e28fe2e69f0ff259f4c82f3fff8e35836",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "industrial",
+          "neutral",
+          "grounded"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "sharp",
+        "motion": "none",
+        "effects": [
+          "subtle grain",
+          "flat surfaces"
+        ],
+        "rationale": "Use restrained gray surfaces, a crisp grid and slight texture to suggest durable material.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "industrial",
+        "neutral",
+        "grounded",
+        "concrete gray",
+        "silver",
+        "charcoal",
+        "irregular speckles",
+        "diffuse patches",
+        "fine pits",
+        "rough concrete",
+        "granular pores",
+        "light theme",
+        "sharp corners",
+        "none motion",
+        "mixed brightness",
+        "low contrast"
+      ]
     },
     {
       "id": "patterns_007",
       "category": "patterns",
-      "path": "images/library/patterns/electric_24.jpg",
-      "tags": []
+      "path": "images/library/patterns/patterns_007.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "MS9Tnh3if1o",
+        "photographer": "Kiwihug",
+        "source_title": "White woven textile",
+        "page_url": "https://unsplash.com/photos/MS9Tnh3if1o",
+        "download_url": "https://images.unsplash.com/photo-1615799998603-7c6270a45196?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 834,
+      "height": 1200,
+      "observed": {
+        "description": "A pale woven fabric has fine repeated horizontal and vertical threads with faint gray shading.",
+        "color_words": [
+          "white",
+          "ivory",
+          "light gray"
+        ],
+        "palette_hex": [
+          "#e2e2e2",
+          "#dfdfdf",
+          "#e4e4e4",
+          "#dadada",
+          "#e7e7e7"
+        ],
+        "shapes": [
+          "fine crosshatch",
+          "parallel threads",
+          "regular weave"
+        ],
+        "textures": [
+          "woven fibers",
+          "soft fabric"
+        ],
+        "composition": "Even close-up textile fills the frame with a fine regular structure.",
+        "brightness": "light",
+        "contrast": "low"
+      },
+      "sha256": "7e5d8822117003160e886e92e74214c692e929624fc7cc0015ea80ecdf2272f7",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "soft",
+          "tactile",
+          "quiet"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "soft",
+        "motion": "none",
+        "effects": [
+          "paper surface",
+          "subtle grain"
+        ],
+        "rationale": "Use soft ivory surfaces and barely visible texture with lightly rounded cards and relaxed spacing.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "soft",
+        "tactile",
+        "quiet",
+        "white",
+        "ivory",
+        "light gray",
+        "fine crosshatch",
+        "parallel threads",
+        "regular weave",
+        "woven fibers",
+        "soft fabric",
+        "light theme",
+        "soft corners",
+        "none motion",
+        "light brightness",
+        "low contrast"
+      ]
     },
     {
       "id": "patterns_008",
       "category": "patterns",
-      "path": "images/library/patterns/midnight_01.jpg",
-      "tags": []
+      "path": "images/library/patterns/patterns_008.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "XFWiZTa2Ub0",
+        "photographer": "SJ Objio",
+        "source_title": "Crumpled parchment paper",
+        "page_url": "https://unsplash.com/photos/XFWiZTa2Ub0",
+        "download_url": "https://images.unsplash.com/photo-1603484477859-abe6a73f9366?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 800,
+      "height": 1200,
+      "observed": {
+        "description": "Crumpled cream paper is covered in irregular folds, angular creases and soft warm shadows.",
+        "color_words": [
+          "cream",
+          "beige",
+          "tan"
+        ],
+        "palette_hex": [
+          "#bbb5a8",
+          "#c1bdb1",
+          "#c4c2b7",
+          "#b0a593",
+          "#cac9c0"
+        ],
+        "shapes": [
+          "irregular polygons",
+          "angular creases",
+          "folded ridges"
+        ],
+        "textures": [
+          "crumpled paper",
+          "matte fibers"
+        ],
+        "composition": "Edge-to-edge paper texture has uneven crease density and shallow dimensional shading.",
+        "brightness": "light",
+        "contrast": "medium"
+      },
+      "sha256": "c0524d059ce607e0553dea9ce9f56b1ef01e119ee76190e9906b4834c07f2fe6",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "handcrafted",
+          "warm",
+          "informal"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "soft",
+        "motion": "none",
+        "effects": [
+          "paper surface",
+          "soft shadow"
+        ],
+        "rationale": "Use warm paper colors, subtle texture and informal softly shaped components.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "handcrafted",
+        "warm",
+        "informal",
+        "cream",
+        "beige",
+        "tan",
+        "irregular polygons",
+        "angular creases",
+        "folded ridges",
+        "crumpled paper",
+        "matte fibers",
+        "light theme",
+        "soft corners",
+        "none motion",
+        "light brightness",
+        "medium contrast"
+      ]
     },
     {
       "id": "patterns_009",
       "category": "patterns",
-      "path": "images/library/patterns/midnight_11.jpg",
-      "tags": []
+      "path": "images/library/patterns/patterns_009.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "i0fCUofGjV8",
+        "photographer": "Nick Iliasov",
+        "source_title": "Cracked blue ice",
+        "page_url": "https://unsplash.com/photos/i0fCUofGjV8",
+        "download_url": "https://images.unsplash.com/photo-1546453667-8a8d2d07bc20?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 800,
+      "height": 1200,
+      "observed": {
+        "description": "Dark blue ice contains pale branching fractures and dense feathery crystalline markings.",
+        "color_words": [
+          "navy",
+          "ice blue",
+          "white",
+          "slate"
+        ],
+        "palette_hex": [
+          "#283f4f",
+          "#212f36",
+          "#37546a",
+          "#4b6a86",
+          "#728cae"
+        ],
+        "shapes": [
+          "branching fractures",
+          "crystalline clusters",
+          "radiating lines"
+        ],
+        "textures": [
+          "cracked ice",
+          "frost crystals"
+        ],
+        "composition": "Close-up fills the frame with an irregular web of bright marks over dark blue.",
+        "brightness": "dark",
+        "contrast": "high"
+      },
+      "sha256": "12b632e05f5e544d1f74cfb34f1d0551343d1a6a5ac927d9b4007520f1991b7e",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "wintry",
+          "dramatic",
+          "intricate"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "dark",
+        "corners": "sharp",
+        "motion": "calm",
+        "effects": [
+          "glass surface",
+          "fine line motif"
+        ],
+        "rationale": "Use navy and ice-blue highlights with fine branching details and restrained translucent layers.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "wintry",
+        "dramatic",
+        "intricate",
+        "navy",
+        "ice blue",
+        "white",
+        "slate",
+        "branching fractures",
+        "crystalline clusters",
+        "radiating lines",
+        "cracked ice",
+        "frost crystals",
+        "dark theme",
+        "sharp corners",
+        "calm motion",
+        "dark brightness",
+        "high contrast"
+      ]
     },
     {
       "id": "patterns_010",
       "category": "patterns",
-      "path": "images/library/patterns/midnight_21.jpg",
-      "tags": []
-    },
-    {
-      "id": "patterns_011",
-      "category": "patterns",
-      "path": "images/library/patterns/ocean_06.jpg",
-      "tags": []
-    },
-    {
-      "id": "patterns_012",
-      "category": "patterns",
-      "path": "images/library/patterns/ocean_16.jpg",
-      "tags": []
-    },
-    {
-      "id": "patterns_013",
-      "category": "patterns",
-      "path": "images/library/patterns/paper_05.jpg",
-      "tags": []
-    },
-    {
-      "id": "patterns_014",
-      "category": "patterns",
-      "path": "images/library/patterns/paper_15.jpg",
-      "tags": []
-    },
-    {
-      "id": "patterns_015",
-      "category": "patterns",
-      "path": "images/library/patterns/paper_25.jpg",
-      "tags": []
-    },
-    {
-      "id": "patterns_016",
-      "category": "patterns",
-      "path": "images/library/patterns/rose_07.jpg",
-      "tags": []
-    },
-    {
-      "id": "patterns_017",
-      "category": "patterns",
-      "path": "images/library/patterns/rose_17.jpg",
-      "tags": []
-    },
-    {
-      "id": "patterns_018",
-      "category": "patterns",
-      "path": "images/library/patterns/sage_03.jpg",
-      "tags": []
-    },
-    {
-      "id": "patterns_019",
-      "category": "patterns",
-      "path": "images/library/patterns/sage_13.jpg",
-      "tags": []
-    },
-    {
-      "id": "patterns_020",
-      "category": "patterns",
-      "path": "images/library/patterns/sage_23.jpg",
-      "tags": []
-    },
-    {
-      "id": "patterns_021",
-      "category": "patterns",
-      "path": "images/library/patterns/sunlit_10.jpg",
-      "tags": []
-    },
-    {
-      "id": "patterns_022",
-      "category": "patterns",
-      "path": "images/library/patterns/sunlit_20.jpg",
-      "tags": []
-    },
-    {
-      "id": "patterns_023",
-      "category": "patterns",
-      "path": "images/library/patterns/terracotta_02.jpg",
-      "tags": []
-    },
-    {
-      "id": "patterns_024",
-      "category": "patterns",
-      "path": "images/library/patterns/terracotta_12.jpg",
-      "tags": []
-    },
-    {
-      "id": "patterns_025",
-      "category": "patterns",
-      "path": "images/library/patterns/terracotta_22.jpg",
-      "tags": []
+      "path": "images/library/patterns/patterns_010.jpg",
+      "source": {
+        "provider": "Unsplash",
+        "photo_id": "UjupleczBOY",
+        "photographer": "Scott Webb",
+        "source_title": "Marble surface",
+        "page_url": "https://unsplash.com/photos/UjupleczBOY",
+        "download_url": "https://images.unsplash.com/photo-1566305977571-5666677c6e98?w=1200&q=85&fm=jpg&fit=max",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "retrieved_on": "2026-10-17",
+        "selection_evidence": "Photographer-credited Unsplash photo listing; asset URL predates 2022-02; visually inspected by assistant."
+      },
+      "width": 713,
+      "height": 1200,
+      "observed": {
+        "description": "A pale stone surface has cloudy gray veining and irregular softly blended mineral patches.",
+        "color_words": [
+          "white",
+          "pale gray",
+          "silver"
+        ],
+        "palette_hex": [
+          "#cdcdcd",
+          "#d3d3d3",
+          "#bcbcbc",
+          "#d8d8d8",
+          "#dedede"
+        ],
+        "shapes": [
+          "irregular veins",
+          "cloudy patches",
+          "soft diagonals"
+        ],
+        "textures": [
+          "marble-like stone",
+          "fine mottling"
+        ],
+        "composition": "Even edge-to-edge surface with subtle directional veins and low visual density.",
+        "brightness": "light",
+        "contrast": "low"
+      },
+      "sha256": "3f755a1699884782ec56f37c88d17c748fb2c2c745d0aa9b715ca9a52ba1ba2f",
+      "image_type": "photograph",
+      "annotation": {
+        "method": "assistant_vision",
+        "author": "Codex",
+        "human_reviewed": false,
+        "date": "2026-10-17",
+        "scope": "Visible pixels inspected in labeled contact sheets. Palette hex values sampled with Pillow."
+      },
+      "feeling": {
+        "mood_words": [
+          "refined",
+          "restrained",
+          "airy"
+        ],
+        "status": "subjective AI interpretation"
+      },
+      "suggested_design": {
+        "theme": "light",
+        "corners": "soft",
+        "motion": "none",
+        "effects": [
+          "stone texture",
+          "soft shadow"
+        ],
+        "rationale": "Use pale neutral surfaces, subtle gray detail and spacious elegant layouts.",
+        "status": "design hypothesis, not validated preference ground truth"
+      },
+      "tags": [
+        "refined",
+        "restrained",
+        "airy",
+        "white",
+        "pale gray",
+        "silver",
+        "irregular veins",
+        "cloudy patches",
+        "soft diagonals",
+        "marble-like stone",
+        "fine mottling",
+        "light theme",
+        "soft corners",
+        "none motion",
+        "light brightness",
+        "low contrast"
+      ]
     }
   ]
 }
