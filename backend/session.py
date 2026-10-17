@@ -15,11 +15,17 @@ class Session:
     pairs: list[ABPair] = field(default_factory=list)
     choices: list[Choice] = field(default_factory=list)
     result: ExtractResponse | None = None
+    redesign: dict | None = None
+    redesign_task: asyncio.Task | None = None
     degraded: bool = False
     touched: float = field(default_factory=time.monotonic)
     lock: asyncio.Lock = field(default_factory=asyncio.Lock)
 
     def clear(self):
+        if self.redesign_task and not self.redesign_task.done():
+            self.redesign_task.cancel()
+        self.redesign_task = None
+        self.redesign = None
         self.images.clear()
         self.baseline = None
         self.pairs.clear()
@@ -33,7 +39,7 @@ class SessionStore:
         self.sessions = {}
 
     def create(self):
-        stale = [key for key, value in self.sessions.items() if time.monotonic()-value.touched > 7200 and not value.lock.locked()]
+        stale = [key for key, value in self.sessions.items() if time.monotonic()-value.touched > 7200 and not value.lock.locked() and not (value.redesign_task and not value.redesign_task.done())]
         for key in stale:
             del self.sessions[key]
         if len(self.sessions) >= 100:

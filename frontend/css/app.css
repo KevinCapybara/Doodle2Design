@@ -17,3 +17,17 @@ dialog{background:var(--panel);color:var(--ink);border:1px solid var(--line);bor
 .canvas-wrap canvas{max-width:90svh;height:auto;max-height:none;object-fit:fill}
 .canvas-wrap{background:var(--panel)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Document-led website generation */
+.generation-panel{display:grid;gap:12px;border:1px solid #414940;background:#202820;border-radius:18px;padding:22px;margin:26px 0 18px}
+.generation-panel strong{font-size:1.05rem;line-height:1.45}
+.generation-panel p{margin:0;font-size:.9rem;line-height:1.65;color:#c5cec3;overflow-wrap:anywhere}
+.generation-panel small{color:#a6b4a3;font-family:monospace}
+.generation-panel .eyebrow{font-size:.65rem;letter-spacing:.12em;color:#d6edab}
+.generation-panel[data-state="error"]{border-color:#946950;background:#2e2520}
+.generation-panel[data-state="matching"] strong::before,.generation-panel[data-state="generating"] strong::before,.generation-panel[data-state="queued"] strong::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:#d6edab;margin-right:10px;animation:generation-pulse 1.8s ease-in-out infinite}
+.result-downloads{flex-wrap:wrap}
+#taste-source{font-size:.75rem;line-height:1.6}
+.preview-tabs button:disabled{opacity:.4;cursor:wait}
+@keyframes generation-pulse{50%{opacity:.3}}
+@media(prefers-reduced-motion:reduce){.generation-panel strong::before{animation:none!important}}

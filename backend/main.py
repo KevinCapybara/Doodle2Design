@@ -1,6 +1,7 @@
 from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import Annotated, Literal
+import asyncio
 import logging
 import os
 
@@ -14,6 +15,7 @@ from backend.imaging import prepare_image
 from backend.schemas import BaselineProfile, Choice, ChoiceRequest, ExtractResponse, ResetRequest, SessionRequest, VibeTokens
 from backend.session import SessionStore
 from backend import vlm
+from backend.redesign import load_catalog, router as redesign_router
 
 ROOT = Path(__file__).resolve().parents[1]
 TOKEN_PATH = ROOT / "demo_site/vibe.json"
@@ -26,7 +28,14 @@ async def lifespan(app):
     from backend.image_db import ImageDB
     app.state.images = ImageDB()
     app.state.sessions = SessionStore()
-    yield
+    app.state.design_slots = asyncio.Semaphore(2)
+    try:
+        yield
+    finally:
+        tasks = [session.redesign_task for session in app.state.sessions.sessions.values() if session.redesign_task and not session.redesign_task.done()]
+        for task in tasks:
+            task.cancel()
+        await asyncio.gather(*tasks, return_exceptions=True)
 
 
 app = FastAPI(title="Doodle2Design", lifespan=lifespan, docs_url=None, redoc_url=None)
@@ -41,7 +50,8 @@ async def local_headers(request: Request, call_next):
     response = await call_next(request)
     response.headers["X-Content-Type-Options"] = "nosniff"
     response.headers["Referrer-Policy"] = "no-referrer"
-    response.headers["Content-Security-Policy"] = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'"
+    if "Content-Security-Policy" not in response.headers:
+        response.headers["Content-Security-Policy"] = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'"
     if request.url.path.startswith("/api/"):
         response.headers["Cache-Control"] = "no-store"
     return response
@@ -54,7 +64,7 @@ def healthz():
 
 @app.get("/api/config")
 def config():
-    return {"offline": vlm.mock_mode()}
+    return {"offline": vlm.mock_mode(), "generation_available": not vlm.mock_mode(), "design_themes": len(load_catalog())}
 
 
 @app.post("/api/session", status_code=201)
@@ -155,6 +165,9 @@ async def reset(data: ResetRequest):
             session.clear()
         TOKEN_PATH.unlink(missing_ok=True)
     return {"ok": True}
+
+
+app.include_router(redesign_router)
 
 
 for route, directory in (("/images", "images"), ("/demo", "demo_site"), ("/", "frontend")):

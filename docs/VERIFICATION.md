@@ -1,68 +1,81 @@
 # Verification — Doodle2Design
 
-Verified locally on Windows on 2026-10-17 with Python 3.12 and headless Microsoft Edge. No live paid model requests were made.
+Verified on Windows with Python 3.12 and headless Microsoft Edge on 2026-10-17.
+No live paid model requests were made; no Anthropic key is configured locally.
 
-## Automated backend checks
+## Current document-led LLM redesign
 
-`python -m pytest -q`: **40 passed**, approximately 12 seconds with image-content and expressive-theme regression coverage. Optional `node --test tests/test_visual_map.mjs`: **6 passed**.
+- Python suite: **48 passed**. Legacy Node mapping suite: **6 passed**.
+- All 30 exact document titles, complete design-system sections and original
+  DOCX SHA-256 hashes verified.
+- Matching receives the baseline, mood, original images, ten winning images,
+  selected/rejected tags and the complete catalog of selection descriptions.
+  Unknown/invented theme names are rejected.
+- Generation receives the selected full design brief and original Northwind
+  content. The pipeline returns model-written markup/CSS/JavaScript rather
+  than selecting a preset renderer.
+- SDK streaming is exercised with fake responses. Invalid JSON is retried once;
+  generated structure, required sections, business data and code boundaries
+  are validated. Failures produce an error state, without exposing internal
+  transport details.
+- Job caching prevents duplicate generation. Reset cancels active work and
+  removes completed artifacts. Missing key and incomplete calibration return
+  clear API errors.
+- Generated HTML carries HTTP sandbox/CSP headers; downloads also contain an
+  embedded resource policy. The host application's policy remains unchanged.
 
-- Strict token schema: exact fields, hex colors, enums and heading-weight bounds.
-- Text/background contrast correction reaches 4.5:1 and changes no other token.
-- JPEG preparation handles transparency and limits the longest side to 768 px.
-- Distinct input palettes produce different offline tokens.
-- Exactly ten same-category pairs, 20 unique ids, all four categories at least twice, reproducible seeded plans.
-- Actual image pixels never repeat across 20 complete seeded comparison plans. All 25 generated patterns have different content. Library loading excludes duplicate normalized pixels under different names or dimensions, and rejects categories with fewer than six distinct references.
-- Full draw and upload session flows, cached extraction, token file creation, latest-token retrieval and reset.
-- Corrupt/oversized/excess uploads rejected; unknown sessions and incorrect phases rejected.
-- Duplicate vote retries do not advance a round twice; prefetch does not advance the session.
-- Default-theme reset preserves a completed session for reapplication when requested.
-- Markdown fences parsed, invalid JSON retried once, failures in baseline/planning/extraction return valid offline results.
+## Browser integration
 
-The installed Starlette version emits one dependency deprecation warning about its TestClient httpx adapter. Tests pass; the application runtime does not use that adapter. The warning is not suppressed.
+The repeatable browser fixture uses real FastAPI routes and the real wizard,
+substituting only model responses. Its simple generated page is an integration
+fixture, not an example of live model design quality.
 
-## Browser checks
+- Complete drawing and all ten A/B selections through browser controls.
+- Missing-key error disables AI preview/download, then retry reaches generation.
+- Exact theme title, match reason, model and generated summary appear.
+- Generated markup/CSS/scripts load and local form validation/confirmation works.
+- Before/after changes between the original and generated website.
+- Full HTML and model-written CSS download with correct filenames.
+- Pause/resume and operating-system reduced motion work.
+- Wizard checked at 320, 768, 1024 and 1440 pixels without document overflow.
+- Generated iframe cannot access the host DOM and its network request is blocked.
+- Fullscreen retains the HTTP sandbox, blocked network and inaccessible storage.
+- Reset discards the artifact and returns to the landing page.
+- No uncaught browser script errors in the fixture flow.
+- A separate ten-round flow against the real localhost:8000 configuration ends
+  in the expected API-key setup message, rather than a fake generated design.
+- Result and setup screenshots were visually inspected.
 
-- Both input paths complete the entire flow, independently through browser controls.
-- Mouse strokes, shape dragging, background/brush colors, size changes and undo work. Undo restores the exact prior canvas bitmap.
-- Touch input draws on the canvas; canvas display retains its 3:2 coordinate ratio at all tested widths.
-- Modal opens and closes by Escape; image choices work with arrow keys and clicks.
-- All ten A/B screens have **zero visible text**, including no header/footer/toasts/badge. Twenty reference URLs are distinct.
-- Final-click extraction and preview complete offline in approximately 1.3 seconds, including the intentional brief animation. A full ten-choice flow takes roughly 4.2 seconds with automated input.
-- Live preview changes root CSS variables; the demo body structure stays the same. Before/after restores defaults and reapplies tokens without replacing HTML.
-- CSS download produces `doodle2design-theme.css`; reset/reapply and restarting the wizard work.
-- Upload accepts three references, rejects a fourth, removes a thumbnail and proceeds with the remaining references.
-- Wizard views tested at **320, 768, 1024 and 1440 px**. Demo themes additionally tested at **286, 320, 686, 768, 811, 914, 1024 and 1440 px**, including the actual iframe widths.
-- No horizontal document overflow in the tested states, and **zero browser console errors** in both complete flows.
-- Neon-dark input produced **Midnight Structure** (`#141517` background); pastel input produced **Daylight Structure** (`#edeff7` background) in the captured comparison sessions. Randomized comparison plans can change the precise palette between sessions.
-- Full demo pages and mobile views were visually inspected. Screenshots are in `docs/screenshots/`.
+The browser checks caught and corrected sandboxed form handling: allow-forms
+enables validation and submit events, while CSP form-action none continues to
+block submissions. The trusted original preview retains its normal origin;
+generated code never receives allow-same-origin.
 
-## Launcher checks
+## Existing behavior retained
 
-- Initial startup installs dependencies, creates `.env`, starts uvicorn, and passes `/healthz` on 8000.
-- Restart with unchanged requirements skips dependency installation using the requirements hash marker.
-- An isolated fresh directory, without `.venv`, `.env`, manifest or images, successfully creates its environment, installs dependencies, generates 100 references and launches on **8001** while 8000 is occupied.
-- Browser auto-opening is implemented with `webbrowser.open`; this verification set `VIBE_NO_BROWSER=1` to avoid creating extra visible tabs. A preview was opened through the app panel.
-- Backend/scripts pass Python compilation. The repository has no npm dependency or frontend build.
+The suite still covers strict token models, readable text contrast, image
+normalization, content-based reference deduplication, reproducible ten-round
+same-category pairing, twenty unique references, category coverage, full draw
+and upload APIs, upload restrictions, idempotent voting, phase guards,
+baseline/extraction offline fallbacks, token reset/reapply and legacy visual
+mappings.
 
-## Review and limits
+Prior launcher checks confirmed fresh installation, requirement-hash caching,
+generated reference libraries, loopback serving, occupied-port fallback to 8001
+and restart behavior. No new runtime dependency was added for this redesign.
 
-Reviewed against the complete supplied specification: local-only storage and hosting, in-memory UUID sessions, four-category comparison coverage, exact token contracts, fixed deterministic CSS vocabulary, same-origin iframe messaging, validated image content and constrained model output. Keys remain server-side, filenames are never used as upload destinations, and model text is rendered through `textContent`.
+## Limits
 
-The integration uses the default `claude-sonnet-4-6` string and `VLM_MODEL` override as specified. Real Anthropic output, service availability and paid-model latency remain **unverified without a configured API key**. All network failure paths used by the app are covered by local fakes or deterministic fallback tests. The original “under 15 seconds with the real VLM” target cannot be promised for an external service; the app enforces a 14-second model-extraction deadline and falls back offline.
+Live Anthropic theme choice, generated design quality, runtime correctness of
+arbitrary model output and paid-service latency remain unverified without an
+API key. Integration fixtures establish the pipeline and browser boundary,
+not how well the real model follows every visual detail in a brief.
 
-Optional adaptive replanning after round five and automated VLM image tagging are intentionally omitted from the MVP. Before/after, JSON download and CSS export are implemented.
+The original under-15-second goal applies to taste extraction, which keeps its
+14-second model deadline and offline fallback. Full website generation is a
+separate, visibly longer background step with an eight-minute job budget.
+Output validation checks selected immutable business facts and required sections;
+it cannot prove all copy, interactions or responsive layouts are perfect.
 
-## Duplicate-reference correction
-
-The initial procedural pattern generator cycled ten palettes and five motifs together, creating identical images every ten indices. ID-only pairing checks did not detect that different filenames contained the same pixels. The motif now shifts on each palette cycle, the 15 repeated sample assets were replaced, and library loading fingerprints normalized image content before exposing references to either seeded or model-planned selection. A previously failing regression now passes. Existing manifests and image ids remain compatible.
-
-## Expressive redesign verification
-
-- Botanical, cosmic, architectural and editorial presets use different SVG scenes, hero composition, button silhouette, card surface and animation settings. The default theme and old saved tokens still work.
-- A complete offline API session with a green starting image produces forest graphics, a centered composition, calm motion, pill buttons, organic cards, rounded geometry and a green primary color, even after all ten reference choices.
-- New VLM extraction must include every visual field; missing fields trigger the existing retry/fallback path. Legacy file loading remains compatible.
-- Fixed CSS mappings reject unknown visual values/fields and unvalidated colors before building SVG data URIs. Foreground color for primary buttons is chosen automatically for contrast.
-- All five presentation states (default plus four directions) were checked in Edge at 286/320/686/768/811/1024/1440 px with no document overflow or console errors. Screenshots were visually inspected.
-- Active animation names and running animations were verified. Pause/resume changes playback state. OS reduced motion disables decorative animation, hides the unnecessary pause button and keeps all below-the-fold content visible.
-- A fixture-driven ten-round browser wizard reaches Forest Reverie, pushes the graphics into the iframe, resets and reapplies the full scene, and downloads CSS containing illustration data URIs, shape, layout and motion variables. This browser test uses offline fixtures; paid VLM calls remain untested.
-- The updated content/HTML structure stays fixed while CSS compositions and the full visual design change. See [EXPRESSIVE_THEMES.md](EXPRESSIVE_THEMES.md) for the extension contract and primary references.
+Starlette emits one TestClient/httpx dependency deprecation warning. Tests pass;
+the warning is not suppressed. The application runtime does not use TestClient.

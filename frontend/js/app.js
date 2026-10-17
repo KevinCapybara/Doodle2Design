@@ -81,7 +81,7 @@ async function restart() {
   try {
     if (state.sessionId) await api('/api/reset', {method: 'POST', body: {session_id: state.sessionId}});
     state.sessionId = null; state.baseline = null; upload.clear();
-    result.frame.src = 'about:blank'; result.result = null;
+    result.stop(); result.frame.src = 'about:blank'; result.result = null;
     phase('landing');
   } catch (error) {notify(error.message, true);} finally {busy(false); if (state.phase === 'landing') document.querySelector('#landing-title').focus({preventScroll: true});}
 }
