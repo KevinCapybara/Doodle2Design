@@ -71,7 +71,7 @@ images/library/
   patterns/      # checkers, organic lines, dots, grids, floral
 ```
 
-Aim for **25 per category**, with clear aesthetic contrasts; **at least 6 per category** are needed for a ten-round plan. PNG, JPG/JPEG and WebP are supported. Rebuild with the virtual environment Python:
+Aim for **25 per category**, with clear aesthetic contrasts; **at least 6 distinct images per category** are needed for a ten-round plan. Duplicate visual content is excluded when the library loads, even under different filenames or image dimensions. PNG, JPG/JPEG and WebP are supported. Rebuild with the virtual environment Python:
 
 ```sh
 # macOS / Linux

@@ -4,13 +4,14 @@ Verified locally on Windows on 2026-10-17 with Python 3.12 and headless Microsof
 
 ## Automated backend checks
 
-`python -m pytest -q`: **24 passed**, approximately 3 seconds.
+`python -m pytest -q`: **28 passed**, approximately 10 seconds after adding image-content regression coverage.
 
 - Strict token schema: exact fields, hex colors, enums and heading-weight bounds.
 - Text/background contrast correction reaches 4.5:1 and changes no other token.
 - JPEG preparation handles transparency and limits the longest side to 768 px.
 - Distinct input palettes produce different offline tokens.
 - Exactly ten same-category pairs, 20 unique ids, all four categories at least twice, reproducible seeded plans.
+- Actual image pixels never repeat across 20 complete seeded comparison plans. All 25 generated patterns have different content. Library loading excludes duplicate normalized pixels under different names or dimensions, and rejects categories with fewer than six distinct references.
 - Full draw and upload session flows, cached extraction, token file creation, latest-token retrieval and reset.
 - Corrupt/oversized/excess uploads rejected; unknown sessions and incorrect phases rejected.
 - Duplicate vote retries do not advance a round twice; prefetch does not advance the session.
@@ -50,3 +51,7 @@ Reviewed against the complete supplied specification: local-only storage and hos
 The integration uses the default `claude-sonnet-4-6` string and `VLM_MODEL` override as specified. Real Anthropic output, service availability and paid-model latency remain **unverified without a configured API key**. All network failure paths used by the app are covered by local fakes or deterministic fallback tests. The original “under 15 seconds with the real VLM” target cannot be promised for an external service; the app enforces a 14-second model-extraction deadline and falls back offline.
 
 Optional adaptive replanning after round five and automated VLM image tagging are intentionally omitted from the MVP. Before/after, JSON download and CSS export are implemented.
+
+## Duplicate-reference correction
+
+The initial procedural pattern generator cycled ten palettes and five motifs together, creating identical images every ten indices. ID-only pairing checks did not detect that different filenames contained the same pixels. The motif now shifts on each palette cycle, the 15 repeated sample assets were replaced, and library loading fingerprints normalized image content before exposing references to either seeded or model-planned selection. A previously failing regression now passes. Existing manifests and image ids remain compatible.

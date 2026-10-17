@@ -83,7 +83,9 @@ def make_image(category, index):
                 x = rng.randrange(w)
                 draw.line([(x, 0), (x+60, 200), (x-30, 420), (x+100, 600)], fill=fg, width=2)
     else:
-        style = index % 5
+        # Shift the motif whenever the ten-color palette cycles. Otherwise
+        # indices 0/10/20 (and so on) produce identical pattern images.
+        style = (index + index // len(PALETTES)) % 5
         for y in range(-80, h+100, 100):
             for x in range(-80, w+100, 100):
                 if style == 0 and (x+y)//100 % 2:
