@@ -4,11 +4,28 @@ import json
 import logging
 import os
 
-from openai import AsyncOpenAI
+from openai import AsyncOpenAI, APIConnectionError, APIStatusError
+from pydantic import ValidationError
 
 logger = logging.getLogger("doodle2design.ai")
 DEFAULT_OPENAI_MODEL = "gpt-5.4"
 DEFAULT_ANTHROPIC_MODEL = "claude-sonnet-4-6"
+
+
+class ModelRequestError(RuntimeError):
+    """A classified failure without upstream payloads or credentials."""
+    def __init__(self, kind):
+        self.kind = kind
+        self.public_message = {
+            "invalid_output": "the AI response did not match the required format.",
+            "incomplete": "the AI response ended before it was complete.",
+            "authentication": "OpenAI rejected the configured key or model permissions.",
+            "rate_limit": "OpenAI reported a rate or usage limit. Wait and retry, or check project limits.",
+            "connection": "the connection to OpenAI failed.",
+            "timeout": "the AI request exceeded its time limit.",
+            "provider": "OpenAI could not complete the request.",
+        }[kind]
+        super().__init__(self.public_message)
 
 
 def setting(name):
@@ -70,33 +87,41 @@ def openai_content(content):
     return converted
 
 
-async def request_openai(system, content, validator, *, model, max_tokens=2200, timeout=30, attempt_timeout=30):
+async def request_openai(system, content, validator, *, model, max_tokens=2200, timeout=30, attempt_timeout=30,
+                         response_schema=None, schema_name="design_response"):
     """Two bounded attempts, including invalid JSON/schema or incomplete streams."""
     converted = openai_content(content)
     # The API requires JSON in input text even when instructions already request it.
     if not any(block["type"] == "input_text" and "json" in block["text"].lower() for block in converted):
         converted.append({"type": "input_text", "text": "Return only valid JSON matching the requested contract."})
     inputs = [{"role": "user", "content": converted}]
+    output_format = {"type": "json_object"} if response_schema is None else {
+        "type": "json_schema", "name": schema_name, "strict": True, "schema": response_schema,
+    }
+    correction = ""
+    failure = ModelRequestError("provider")
     async with AsyncOpenAI(api_key=setting("OPENAI_API_KEY"), base_url="https://api.openai.com/v1",
                            timeout=timeout, max_retries=0) as client:
         for attempt in range(2):
             try:
                 async def receive():
                     stream = await client.responses.create(
-                        model=model, instructions=system + "\nReturn only JSON.",
+                        model=model, instructions=system + "\nReturn only JSON." + correction,
                         input=inputs, max_output_tokens=max_tokens, stream=True,
-                        text={"format": {"type": "json_object"}}, store=False,
+                        text={"format": output_format}, store=False,
                     )
                     async with stream:
                         async for event in stream:
                             if event.type == "response.completed":
                                 response = event.response
                                 if response.status != "completed" or not response.output_text:
-                                    raise ValueError("Model response is incomplete or empty.")
+                                    raise ModelRequestError("incomplete")
                                 return response.output_text
-                            if event.type in {"response.failed", "response.incomplete", "error"}:
-                                raise ValueError("Model response failed or was incomplete.")
-                    raise ValueError("Model stream ended without a completed response.")
+                            if event.type == "response.incomplete":
+                                raise ModelRequestError("incomplete")
+                            if event.type in {"response.failed", "error"}:
+                                raise ModelRequestError("provider")
+                    raise ModelRequestError("incomplete")
                 text = await asyncio.wait_for(receive(), timeout=attempt_timeout)
                 return validator(json.loads(text))
             except asyncio.CancelledError:
@@ -104,4 +129,22 @@ async def request_openai(system, content, validator, *, model, max_tokens=2200, 
             except Exception as error:
                 # Never expose keys, images, prompts or upstream response bodies in logs.
                 logger.warning("OpenAI attempt %d failed (%s)", attempt + 1, type(error).__name__)
-    raise RuntimeError("OpenAI could not return valid output after retry. Check your key, model access and connection.")
+                if isinstance(error, ValidationError):
+                    known = {"theme", "reason", "summary", "html", "css", "javascript"}
+                    issues = [f"{item['loc'][0] if item['loc'] and item['loc'][0] in known else 'response'}:{item['type']}"
+                              for item in error.errors(include_input=False, include_context=False)[:5]]
+                    logger.warning("Model output validation: %s", ", ".join(issues))
+                    correction = "\nCorrect the previous response's validation issues: " + ", ".join(issues) + ". Follow the exact schema and task requirements."
+                    failure = ModelRequestError("invalid_output")
+                elif isinstance(error, (json.JSONDecodeError, ValueError)):
+                    correction = "\nThe previous response was invalid. Return the exact requested JSON fields and allowed values."
+                    failure = ModelRequestError("invalid_output")
+                elif isinstance(error, ModelRequestError):
+                    failure = error
+                elif isinstance(error, APIStatusError):
+                    failure = ModelRequestError("authentication" if error.status_code in {401, 403} else "rate_limit" if error.status_code == 429 else "provider")
+                elif isinstance(error, asyncio.TimeoutError):
+                    failure = ModelRequestError("timeout")
+                elif isinstance(error, APIConnectionError):
+                    failure = ModelRequestError("connection")
+    raise failure from None

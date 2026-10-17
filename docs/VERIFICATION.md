@@ -1,5 +1,25 @@
 # Verification — Doodle2Design
 
+## Generation response-contract correction — October 17, 2026
+
+- A real failed session showed two successful OpenAI HTTP responses rejected by
+  Pydantic during theme matching. The generic error incorrectly suggested a key
+  or connection problem. The original invalid responses were not retained, so
+  their exact failing fields cannot be recovered.
+- Matching and website generation now supply strict JSON schemas. Matching uses
+  an enum of catalog titles and the existing reason-length bounds. Existing HTML
+  business-data and isolation checks are preserved.
+- Invalid output retries include safe field/error-code feedback. Logs exclude
+  model values; errors distinguish output, incomplete, authentication, rate-limit,
+  connection and timeout failures.
+- Full offline suite: 68 passed; an additional semantic-HTML regression was then
+  added and the five focused contract tests passed.
+- Live strict theme matching passed, followed by a complete generated website
+  using the cached taste profile (without replaying original images or choices).
+  The artifact passed structural validation and rendered in Edge. Its layout
+  overflowed at 768px, so this is not a claim of universally correct generated
+  responsiveness. The generated example remains an ignored local QA artifact.
+
 ## Real-photo dataset update — October 17, 2026
 
 The active reference library now contains **50 real photographs**, ten each in landscapes, architecture, objects, animals and patterns/textures. It replaces the procedural library described in the earlier verification below.

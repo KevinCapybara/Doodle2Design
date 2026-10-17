@@ -99,8 +99,15 @@ Our application supplies the exact task and output contract below."""
 async def request_model(system, content, validator, *, max_tokens=2200):
     """Stream large responses with either provider under the same output contract."""
     if ai_provider.provider_name() == "openai":
+        schema = None
+        if validator is validate_match:
+            schema = ThemeMatch.model_json_schema()
+            schema["properties"]["theme"]["enum"] = list(load_catalog())
+        elif getattr(validator, "__self__", None) is GeneratedDesign:
+            schema = GeneratedDesign.model_json_schema()
         return await ai_provider.request_openai(system, content, validator, model=ai_provider.model_name("redesign"),
-                                               max_tokens=max_tokens, timeout=90, attempt_timeout=210)
+                                               max_tokens=max_tokens, timeout=90, attempt_timeout=210,
+                                               response_schema=schema)
     async with AsyncAnthropic(api_key=ai_provider.setting("ANTHROPIC_API_KEY"), timeout=90.0, max_retries=0) as client:
         for attempt in range(2):
             try:
@@ -235,6 +242,10 @@ async def run_job(session, db, semaphore, state):
         state.update(phase="ready", artifact=result, summary=result.summary)
     except asyncio.CancelledError:
         raise
+    except ai_provider.ModelRequestError as error:
+        stage = "Website generation" if state.get("theme") else "Theme matching"
+        logger.warning("%s failed (%s)", stage, error.kind)
+        state.update(phase="error", error=f"{stage} failed: {error.public_message} Your choices are saved; you can retry.")
     except Exception as error:
         logger.warning("Redesign job failed (%s)", type(error).__name__)
         state.update(phase="error", error="Website generation failed. Check your API key, model access and connection, then retry. Your choices are saved.")

@@ -33,8 +33,13 @@ and AI_PROVIDER=anthropic for Anthropic. AI_PROVIDER=auto prefers a configured
 OpenAI key and otherwise selects Anthropic. Explicit selection never silently
 routes data to the other service. Set VIBE_MOCK=0 to enable AI.
 
-OpenAI uses the Responses API with normalized inline JPEG inputs, JSON mode,
-streaming, store=false and backend Pydantic validation. OPENAI_MODEL defaults to
+OpenAI uses the Responses API with normalized inline JPEG inputs, streaming,
+store=false and backend Pydantic validation. Redesign stages use strict JSON
+schemas: matching constrains the title to the catalog enum and caps reason length;
+generation constrains the four artifact fields. Analysis retains JSON mode.
+Validation retries include field/error codes without raw model values, and logs
+record those safe codes. Output-contract failures are reported separately from
+authentication, connection, rate-limit and timeout failures. OPENAI_MODEL defaults to
 gpt-5.4; OPENAI_VISION_MODEL and OPENAI_REDESIGN_MODEL optionally override it
 per stage. No hosted tools are enabled. Anthropic retains VLM_MODEL (default
 claude-sonnet-4-6) and REDESIGN_MODEL. Claude model names never reach OpenAI.
