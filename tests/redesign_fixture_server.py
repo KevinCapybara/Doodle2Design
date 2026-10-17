@@ -4,7 +4,9 @@ import os
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-os.environ["VIBE_MOCK"] = "1"
+os.environ["VIBE_MOCK"] = "0"
+os.environ["AI_PROVIDER"] = "openai"
+os.environ["OPENAI_API_KEY"] = "fixture-not-a-real-key"
 
 from backend import redesign, vlm
 from backend.main import app

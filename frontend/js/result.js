@@ -42,7 +42,7 @@ export class ThemeResult {
     document.querySelector('#generation-status').textContent = messages[status.phase] || 'Preparing your design…';
     document.querySelector('#generation-detail').textContent = status.error || (active ? 'The model is composing layouts, illustrations, button shapes and animations. This can take a few minutes.' : status.summary || '');
     document.querySelector('#generation-retry').hidden = status.phase !== 'error';
-    document.querySelector('#generation-model').textContent = status.model ? 'Model: ' + status.model : '';
+    document.querySelector('#generation-model').textContent = status.model ? (status.provider === 'openai' ? 'OpenAI' : status.provider === 'anthropic' ? 'Anthropic' : 'Model') + ': ' + status.model : '';
     if (status.theme) {
       document.querySelector('#result-name').textContent = status.theme;
       document.querySelector('#result-rationale').textContent = status.reason || '';

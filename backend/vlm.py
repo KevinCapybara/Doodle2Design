@@ -1,4 +1,4 @@
-"""Anthropic is optional at runtime: every inference has a deterministic fallback."""
+"""Optional vision providers share the same validated taste-analysis pipeline."""
 import asyncio
 import base64
 import json
@@ -8,7 +8,7 @@ import time
 
 from anthropic import AsyncAnthropic
 
-from backend import mock, prompts
+from backend import ai_provider, mock, prompts
 from backend.imaging import fix_contrast, prepare_image
 from backend.schemas import BaselineProfile, VibeTokens, Visuals
 from backend.selection import category_order, plan_pairs, validate_pairs
@@ -17,7 +17,7 @@ logger = logging.getLogger("doodle2design.vlm")
 
 
 def mock_mode():
-    return os.getenv("VIBE_MOCK") == "1" or not os.getenv("ANTHROPIC_API_KEY", "").strip()
+    return not ai_provider.available()
 
 
 def image_block(data):
@@ -33,11 +33,13 @@ def parse_json(value):
 
 async def request_json(system, content, validator):
     """At most two attempts total, including malformed JSON/schema failures."""
+    if ai_provider.provider_name() == "openai":
+        return await ai_provider.request_openai(system, content, validator, model=ai_provider.model_name("vision"))
     async with AsyncAnthropic(api_key=os.environ["ANTHROPIC_API_KEY"], timeout=30.0, max_retries=0) as client:
         for attempt in range(2):
             started = time.perf_counter()
             try:
-                message = await asyncio.wait_for(client.messages.create(model=os.getenv("VLM_MODEL", "claude-sonnet-4-6"), max_tokens=2200, temperature=0, system=system, messages=[{"role": "user", "content": content}]), timeout=30)
+                message = await asyncio.wait_for(client.messages.create(model=ai_provider.model_name("vision"), max_tokens=2200, temperature=0, system=system, messages=[{"role": "user", "content": content}]), timeout=30)
                 text = "".join(block.text for block in message.content if block.type == "text")
                 return validator(parse_json(text))
             except asyncio.CancelledError:

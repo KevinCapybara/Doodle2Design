@@ -44,7 +44,7 @@ def main():
         marker.write_text(digest)
     if not (ROOT / ".env").exists():
         shutil.copyfile(ROOT / ".env.example", ROOT / ".env")
-        print("Offline mode is ready. Add an Anthropic key in .env to use the vision model.", flush=True)
+        print("Offline mode is ready. Add an OpenAI or Anthropic key in .env to enable AI analysis and website generation.", flush=True)
     subprocess.run([str(python), "scripts/build_manifest.py"], check=True)
     port = choose_port()
     url = f"http://localhost:{port}"

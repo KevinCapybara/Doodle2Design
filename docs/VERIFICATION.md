@@ -1,11 +1,21 @@
 # Verification — Doodle2Design
 
 Verified on Windows with Python 3.12 and headless Microsoft Edge on 2026-10-17.
-No live paid model requests were made; no Anthropic key is configured locally.
+Regression tests do not make live paid model requests. Keys are stripped from
+the test environment and all provider responses are local fakes. A separate live
+OpenAI authentication/model lookup and tiny image/JSON streaming check verify
+the configured adapter. Full paid website generation was not run.
 
 ## Current document-led LLM redesign
 
-- Python suite: **48 passed**. Legacy Node mapping suite: **6 passed**.
+- Python suite: **62 passed**. Legacy Node mapping suite: **6 passed**.
+- OpenAI-only operation covers baseline analysis, comparison planning, taste
+  extraction, document matching and full website generation. Image conversion,
+  provider/model selection, invalid JSON retry, failed/incomplete/refused streams,
+  metadata and setup errors are covered. The real installed OpenAI SDK serializes
+  and decodes an SSE response through an in-memory HTTP transport, with no network.
+  The live image-only check caught OpenAI's requirement for JSON in input text;
+  the adapter now supplies that instruction when missing and a regression covers it.
 - All 30 exact document titles, complete design-system sections and original
   DOCX SHA-256 hashes verified.
 - Matching receives the baseline, mood, original images, ten winning images,
@@ -62,13 +72,13 @@ mappings.
 
 Prior launcher checks confirmed fresh installation, requirement-hash caching,
 generated reference libraries, loopback serving, occupied-port fallback to 8001
-and restart behavior. No new runtime dependency was added for this redesign.
+and restart behavior. The OpenAI integration adds the bounded openai>=2,<3 SDK dependency.
 
 ## Limits
 
-Live Anthropic theme choice, generated design quality, runtime correctness of
-arbitrary model output and paid-service latency remain unverified without an
-API key. Integration fixtures establish the pipeline and browser boundary,
+Live theme choice, generated design quality, runtime correctness of
+arbitrary model output and full website generation latency remain unverified
+by a paid end-to-end run. Integration fixtures establish the pipeline and browser boundary,
 not how well the real model follows every visual detail in a brief.
 
 The original under-15-second goal applies to taste extraction, which keeps its

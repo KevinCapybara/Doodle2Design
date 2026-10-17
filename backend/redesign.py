@@ -5,7 +5,6 @@ from html import escape
 from html.parser import HTMLParser
 import json
 import logging
-import os
 from pathlib import Path
 
 from anthropic import AsyncAnthropic
@@ -13,7 +12,7 @@ from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import HTMLResponse, JSONResponse, Response
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
-from backend import vlm
+from backend import ai_provider, vlm
 from backend.schemas import SessionRequest
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -98,13 +97,16 @@ Our application supplies the exact task and output contract below."""
 
 
 async def request_model(system, content, validator, *, max_tokens=2200):
-    """Stream large responses without the SDK's long non-streaming request limit."""
-    async with AsyncAnthropic(api_key=os.environ["ANTHROPIC_API_KEY"], timeout=90.0, max_retries=0) as client:
+    """Stream large responses with either provider under the same output contract."""
+    if ai_provider.provider_name() == "openai":
+        return await ai_provider.request_openai(system, content, validator, model=ai_provider.model_name("redesign"),
+                                               max_tokens=max_tokens, timeout=90, attempt_timeout=210)
+    async with AsyncAnthropic(api_key=ai_provider.setting("ANTHROPIC_API_KEY"), timeout=90.0, max_retries=0) as client:
         for attempt in range(2):
             try:
                 async def receive():
                     async with client.messages.stream(
-                        model=os.getenv("REDESIGN_MODEL") or os.getenv("VLM_MODEL", "claude-sonnet-4-6"),
+                        model=ai_provider.model_name("redesign"),
                         max_tokens=max_tokens, temperature=0.3, system=system,
                         messages=[{"role": "user", "content": content}],
                     ) as stream:
@@ -216,7 +218,7 @@ def public_status(session):
     state = session.redesign
     if not state:
         return {"phase": "idle", "theme": None, "reason": None, "summary": None, "error": None}
-    result = {key: state.get(key) for key in ("phase", "theme", "reason", "summary", "error", "model")}
+    result = {key: state.get(key) for key in ("phase", "theme", "reason", "summary", "error", "model", "provider")}
     if state["phase"] == "ready":
         result.update(preview_url=f"/api/redesign/preview?session_id={session.id}",
                       download_url=f"/api/redesign/download?session_id={session.id}")
@@ -247,12 +249,12 @@ async def start_redesign(data: SessionRequest, request: Request):
         if session.redesign and session.redesign["phase"] != "error":
             return JSONResponse(public_status(session), status_code=200 if session.redesign["phase"] == "ready" else 202)
         if vlm.mock_mode():
-            raise HTTPException(503, "LLM website generation needs ANTHROPIC_API_KEY in .env and VIBE_MOCK=0. Save the key and restart Doodle2Design, then start a new calibration. Restarting clears the current session.")
+            raise HTTPException(503, (ai_provider.configuration_error() or "Configure your AI provider in .env.") + " Restart Doodle2Design after changing settings, then start a new calibration. Restarting clears the current session.")
         pending = sum(bool(s.redesign_task and not s.redesign_task.done()) for s in request.app.state.sessions.sessions.values())
         if pending >= 4:
             raise HTTPException(429, "The design engine is busy. Retry after a current design finishes.")
         state = {"phase": "queued", "theme": None, "reason": None, "summary": None, "error": None,
-                 "model": os.getenv("REDESIGN_MODEL") or os.getenv("VLM_MODEL", "claude-sonnet-4-6")}
+                 "model": ai_provider.model_name("redesign"), "provider": ai_provider.provider_name()}
         session.redesign = state
         session.redesign_task = asyncio.create_task(run_job(session, request.app.state.images, request.app.state.design_slots, state))
         return JSONResponse(public_status(session), status_code=202)

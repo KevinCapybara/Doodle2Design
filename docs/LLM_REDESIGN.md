@@ -28,16 +28,25 @@ design briefs are reference data, not agent/tool/permission instructions.
 
 ## Configuration and lifecycle
 
-ANTHROPIC_API_KEY is required for matching and generation. Set VIBE_MOCK=0.
-VLM_MODEL defaults to claude-sonnet-4-6. Optional REDESIGN_MODEL overrides it
-for the two redesign calls. The key stays server-side. Restart after changing
-environment settings; restarting loses the current in-memory session.
+Set OPENAI_API_KEY and AI_PROVIDER=openai for OpenAI, or ANTHROPIC_API_KEY
+and AI_PROVIDER=anthropic for Anthropic. AI_PROVIDER=auto prefers a configured
+OpenAI key and otherwise selects Anthropic. Explicit selection never silently
+routes data to the other service. Set VIBE_MOCK=0 to enable AI.
+
+OpenAI uses the Responses API with normalized inline JPEG inputs, JSON mode,
+streaming, store=false and backend Pydantic validation. OPENAI_MODEL defaults to
+gpt-5.4; OPENAI_VISION_MODEL and OPENAI_REDESIGN_MODEL optionally override it
+per stage. No hosted tools are enabled. Anthropic retains VLM_MODEL (default
+claude-sonnet-4-6) and REDESIGN_MODEL. Claude model names never reach OpenAI.
+
+Keys stay server-side in the ignored .env file. Restart after changing environment
+settings; restarting loses the current in-memory session.
 
 No key means the app can still calibrate taste, but shows an explicit setup error
 for generation. There is no simulated success or preset website fallback.
 Taste extraction may use offline analysis even when a subsequent generation works.
 
-Generation uses the Anthropic async streaming helper, at most two attempts per
+Generation uses the selected provider's async streaming API, at most two attempts per
 stage (including schema failures), 210 seconds per attempt and a 480-second total
 job budget including queue time. Transport reads time out after 90 seconds without
 data. Two jobs can run concurrently and at most four can be pending. Repeated
@@ -83,6 +92,10 @@ quality varies. Network/service/key errors surface as retryable UI states.
 Original extraction/token interfaces remain compatible.
 
 Implementation references:
+- [OpenAI Python SDK](https://developers.openai.com/api/reference/python)
+- [OpenAI image inputs](https://developers.openai.com/api/docs/guides/images-vision)
+- [OpenAI streaming](https://developers.openai.com/api/docs/guides/streaming-responses)
+- [OpenAI JSON mode and validation](https://developers.openai.com/api/docs/guides/structured-outputs)
 - [Anthropic Python SDK streaming](https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/python)
 - [MDN iframe sandbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe)
 - [MDN CSP sandbox](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/sandbox)

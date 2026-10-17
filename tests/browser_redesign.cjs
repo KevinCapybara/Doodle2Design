@@ -14,7 +14,7 @@ const base = process.env.DOODLE_QA_URL || 'http://localhost:8002';
     await page.route('**/api/redesign', async route=>{
       if (route.request().method()==='POST' && !failedOnce) {
         failedOnce=true;
-        await route.fulfill({status:503,json:{detail:'LLM website generation needs ANTHROPIC_API_KEY in .env and VIBE_MOCK=0.'}});
+        await route.fulfill({status:503,json:{detail:'LLM website generation needs OPENAI_API_KEY in .env and VIBE_MOCK=0.'}});
       } else await route.continue();
     });
     await page.goto(base);
@@ -26,12 +26,13 @@ const base = process.env.DOODLE_QA_URL || 'http://localhost:8002';
     }
     await page.locator('#phase-result').waitFor({state:'visible'});
     await page.locator('#generation-panel[data-state=error]').waitFor();
-    assert((await page.locator('#generation-detail').innerText()).includes('ANTHROPIC_API_KEY'));
+    assert((await page.locator('#generation-detail').innerText()).includes('OPENAI_API_KEY'));
     assert(await page.locator('#preview-after').isDisabled());
     assert(await page.locator('#download-html').isDisabled());
     await page.locator('#generation-retry').click();
     await page.locator('#generation-panel[data-state=ready]').waitFor({timeout:15000});
     assert.equal(await page.locator('#result-name').innerText(),'Botanical');
+    assert((await page.locator('#generation-model').innerText()).startsWith('OpenAI:'));
     assert((await page.locator('#result-rationale').innerText()).includes('organic'));
     const frame = page.frameLocator('#demo-preview');
     await frame.locator('h1').waitFor({state:'visible'});
@@ -102,7 +103,7 @@ const base = process.env.DOODLE_QA_URL || 'http://localhost:8002';
       await local.locator('#ab-left').click();
     }
     await local.locator('#generation-panel[data-state=error]').waitFor();
-    assert((await local.locator('#generation-detail').innerText()).includes('ANTHROPIC_API_KEY'));
+    assert((await local.locator('#generation-detail').innerText()).includes('OPENAI_API_KEY'));
     await local.screenshot({path:'tmp/llm-setup-qa.png',fullPage:true});
     await local.locator('#try-again').click();
     console.log('PASS: real local no-key configuration gives an honest setup message after calibration.');

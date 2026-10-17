@@ -23,25 +23,33 @@ Use one server worker bound to loopback; this is a personal local application.
 
 ## Enable LLM website generation
 
-Set your Anthropic key in .env:
+Set your OpenAI key in the local, Git-ignored .env file:
 
 ```dotenv
-ANTHROPIC_API_KEY=your-key-here
-VLM_MODEL=claude-sonnet-4-6
-REDESIGN_MODEL=
+AI_PROVIDER=openai
+OPENAI_API_KEY=your-key-here
+OPENAI_MODEL=gpt-5.4
+OPENAI_VISION_MODEL=
+OPENAI_REDESIGN_MODEL=
 VIBE_MOCK=0
 ```
 
 Restart the server after changes. Existing environment variables take precedence.
-REDESIGN_MODEL optionally overrides VLM_MODEL for theme matching and generation.
-The key remains on the backend.
+OPENAI_MODEL is the default for all OpenAI calls. OPENAI_VISION_MODEL and
+OPENAI_REDESIGN_MODEL optionally override analysis and redesign respectively.
+The key remains on the backend and is never returned by the API or UI.
+
+Anthropic remains supported with AI_PROVIDER=anthropic, ANTHROPIC_API_KEY,
+VLM_MODEL and optional REDESIGN_MODEL. AI_PROVIDER=auto prefers OpenAI if its
+key is present, otherwise Anthropic. Explicit selection never falls back to the
+other provider. Leave VIBE_MOCK=0 to enable AI; VIBE_MOCK=1 disables both.
 
 Without a key, drawing, uploads, ten comparisons and taste extraction work offline.
 Website generation shows a setup message; it does not substitute a preset.
 Configure the key before starting a calibration because restarting clears sessions.
 
 With AI enabled, normalized source images and winning references are sent to
-Anthropic for visual analysis, theme matching and code generation. Matching also
+the selected provider for visual analysis, theme matching and code generation. Matching also
 uses descriptions of rejected references. The selected full design brief and
 original demo content are sent for generation.
 
@@ -97,7 +105,7 @@ Restart after importing so the cached catalog reloads.
 ## Architecture and isolation
 
 The app uses FastAPI, in-memory UUID sessions, Pillow, Pydantic, vanilla JavaScript
-and the Anthropic async SDK. Drawing/upload and A/B calibration feed the existing
+and the OpenAI/Anthropic async SDKs. Drawing/upload and A/B calibration feed the existing
 validated taste profile. A background job then selects a document and generates a
 new website. Status is polled while the UI remains responsive.
 

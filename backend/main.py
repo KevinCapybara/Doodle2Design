@@ -14,7 +14,7 @@ from fastapi.staticfiles import StaticFiles
 from backend.imaging import prepare_image
 from backend.schemas import BaselineProfile, Choice, ChoiceRequest, ExtractResponse, ResetRequest, SessionRequest, VibeTokens
 from backend.session import SessionStore
-from backend import vlm
+from backend import ai_provider, vlm
 from backend.redesign import load_catalog, router as redesign_router
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -64,7 +64,10 @@ def healthz():
 
 @app.get("/api/config")
 def config():
-    return {"offline": vlm.mock_mode(), "generation_available": not vlm.mock_mode(), "design_themes": len(load_catalog())}
+    return {"offline": vlm.mock_mode(), "generation_available": not vlm.mock_mode(),
+            "ai_provider": ai_provider.provider_name(),
+            "generation_model": ai_provider.model_name("redesign") if ai_provider.provider_name() else None,
+            "design_themes": len(load_catalog())}
 
 
 @app.post("/api/session", status_code=201)
