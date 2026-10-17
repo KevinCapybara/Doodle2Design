@@ -3,3 +3,5 @@
 The original 16-page design document is transcribed in [docs/SPEC.extracted.txt](docs/SPEC.extracted.txt), with page boundaries preserved. The supplied PDF is titled “Vibe: Technical MVP Specification”. The user explicitly corrected the application name to **Doodle2Design**; that correction takes precedence over the document's product name. Internal `VibeTokens`, `vibe.json`, `VIBE_MOCK`, CSS messages and mapping vocabulary retain the specified contracts.
 
 Build and acceptance tracking: [docs/IMPLEMENTATION.md](docs/IMPLEMENTATION.md).
+
+The user's later request for graphics, animations, stronger shape changes and more dramatic redesigns expands the original token vocabulary. Its implementation contract is [docs/EXPRESSIVE_THEMES.md](docs/EXPRESSIVE_THEMES.md); this follow-up takes precedence over the original limited styling vocabulary.

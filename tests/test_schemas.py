@@ -57,3 +57,34 @@ def test_image_preparation_downscales_to_jpeg():
     with Image.open(BytesIO(prepared)) as image:
         assert max(image.size) == 768
         assert image.format == "JPEG"
+
+
+def test_legacy_tokens_remain_valid_with_neutral_visual_defaults():
+    tokens = extract_tokens([png("#132f29")]).model_dump()
+    tokens.pop("visuals", None)
+    restored = VibeTokens.model_validate(tokens)
+    assert restored.visuals.motif == "none"
+    assert restored.visuals.motion == "none"
+
+
+@pytest.mark.parametrize("field", ["motif", "layout", "motion", "button_style", "card_style"])
+def test_arbitrary_visual_instructions_are_rejected(field):
+    tokens = extract_tokens([png("#132f29")]).model_dump()
+    tokens.setdefault("visuals", {})[field] = "arbitrary-css-or-script"
+    with pytest.raises(ValidationError):
+        VibeTokens.model_validate(tokens)
+
+
+@pytest.mark.parametrize("input_color,motif,button,motion", [
+    ("#5c8450", "forest", "pill", "calm"),
+    ("#20204b", "orbital", "soft", "kinetic"),
+    ("#dcb29c", "waves", "pill", "calm"),
+])
+def test_inputs_select_complete_visual_directions(input_color, motif, button, motion):
+    tokens = extract_tokens([png(input_color)])
+    assert tokens.visuals.motif == motif
+    assert tokens.visuals.button_style == button
+    assert tokens.visuals.motion == motion
+    if motif == "forest":
+        assert tokens.geometry.radius == "round"
+        assert tokens.typography.heading_font == "serif"

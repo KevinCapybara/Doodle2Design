@@ -1,4 +1,7 @@
 import {tokenVariables} from './token_map.js';
+import {initializeMotion} from './motion.js';
+
+initializeMotion();
 let appliedKeys = [];
 window.resetVibe = function () {
   for (const key of appliedKeys) document.documentElement.style.removeProperty(key);

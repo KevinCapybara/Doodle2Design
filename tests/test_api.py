@@ -94,3 +94,25 @@ def test_demo_reset_keeps_theme_available_to_reapply(client):
     assert client.get("/api/tokens").status_code == 404
     assert client.post("/api/extract", json={"session_id": sid}).json() == result
     assert client.get("/api/tokens").json() == result["tokens"]
+
+
+def test_nature_input_produces_complete_botanical_redesign(client):
+    sid = baseline(client, files=[upload("#5c8450")])
+    tokens = complete(client, sid)["tokens"]
+    assert tokens["visuals"] == {"motif": "forest", "layout": "centered", "motion": "calm", "button_style": "pill", "card_style": "organic"}
+    assert tokens["geometry"]["radius"] == "round"
+    primary = tokens["colors"]["primary"]
+    assert int(primary[3:5], 16) > max(int(primary[1:3], 16), int(primary[5:7], 16))
+
+
+def test_old_saved_theme_still_loads_with_neutral_visuals(client):
+    import json
+    from backend.main import TOKEN_PATH
+    from backend.mock import extract_tokens
+    legacy = extract_tokens([upload()[1][1]]).model_dump()
+    legacy.pop("visuals")
+    TOKEN_PATH.write_text(json.dumps(legacy), encoding="utf-8")
+    response = client.get("/api/tokens")
+    assert response.status_code == 200
+    assert response.json()["visuals"]["motif"] == "none"
+    assert response.json()["visuals"]["motion"] == "none"

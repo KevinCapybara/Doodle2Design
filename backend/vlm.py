@@ -10,7 +10,7 @@ from anthropic import AsyncAnthropic
 
 from backend import mock, prompts
 from backend.imaging import fix_contrast, prepare_image
-from backend.schemas import BaselineProfile, VibeTokens
+from backend.schemas import BaselineProfile, VibeTokens, Visuals
 from backend.selection import category_order, plan_pairs, validate_pairs
 
 logger = logging.getLogger("doodle2design.vlm")
@@ -90,8 +90,16 @@ async def extract_theme(session, db):
         text = prompts.EXTRACTION_USER+"\nBaseline: "+session.baseline.model_dump_json()+"\nRejected references: "+json.dumps(losers)
         content = [image_block(i) for i in session.images + winners] + [{"type": "text", "text": text}]
         # The tighter overall deadline keeps the on-stage extraction transition bounded.
-        result = await asyncio.wait_for(request_json(prompts.EXTRACTION_SYSTEM, content, VibeTokens.model_validate), timeout=14)
+        result = await asyncio.wait_for(request_json(prompts.EXTRACTION_SYSTEM, content, validate_extraction), timeout=14)
         return fix_contrast(result), False
     except Exception:
         logger.warning("Using offline theme after model error or extraction deadline")
         return fallback, True
+
+
+def validate_extraction(data):
+    """New inference must be complete; old saved token files can still use defaults."""
+    visuals = data.get("visuals") if isinstance(data, dict) else None
+    if not isinstance(visuals, dict) or not set(Visuals.model_fields).issubset(visuals):
+        raise ValueError("Extraction must include the complete visuals group.")
+    return VibeTokens.model_validate(data)

@@ -2,6 +2,7 @@
 import colorsys
 from backend.imaging import image_stats, fix_contrast
 from backend.schemas import BaselineProfile, VibeTokens
+from backend.design_direction import enrich_theme
 
 
 def color(h, s, v):
@@ -46,11 +47,12 @@ def extract_tokens(images, choices=None, db=None):
         winner = db.images[choices[0].winner_id]["path"].split("/")[-1].rsplit(".", 1)[0].replace("_", " ")
         loser = db.images[choices[0].loser_id]["path"].split("/")[-1].rsplit(".", 1)[0].replace("_", " ")
         rationale += f" Choosing {winner} over {loser} helped anchor that direction."
-    return fix_contrast(VibeTokens(
+    tokens = VibeTokens(
         name=("Midnight" if dark else "Daylight") + (" Structure" if sharp else " Reverie"),
         colors=palette,
         typography={"heading_font": "mono" if sharp and dark else "display" if vivid else "serif", "body_font": "sans", "heading_weight": 700 if sharp else 500, "letter_spacing": "tight" if sharp else "normal", "scale": "compact" if dark else "spacious"},
         geometry={"radius": "sharp" if sharp or dark else "round", "border_width": "thick" if sharp else "thin", "density": "tight" if dark else "airy"},
         effects={"shadow": "hard" if sharp else "glow" if dark and vivid else "soft", "gradient": "bold" if vivid else "subtle", "texture": "grain" if s["edge"] > .04 else "none"},
         rationale=rationale,
-    ))
+    )
+    return fix_contrast(enrich_theme(tokens, s, image_stats(images[:1])))

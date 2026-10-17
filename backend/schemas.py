@@ -64,12 +64,21 @@ class Effects(StrictModel):
     texture: Literal["none", "grain"]
 
 
+class Visuals(StrictModel):
+    motif: Literal["none", "forest", "orbital", "grid", "waves"] = "none"
+    layout: Literal["split", "centered", "poster"] = "split"
+    motion: Literal["none", "calm", "kinetic"] = "none"
+    button_style: Literal["token", "pill", "soft", "cut", "sharp"] = "token"
+    card_style: Literal["solid", "glass", "organic", "outline", "paper"] = "solid"
+
+
 class VibeTokens(StrictModel):
     name: str = Field(min_length=1, max_length=80)
     colors: Colors
     typography: Typography
     geometry: Geometry
     effects: Effects
+    visuals: Visuals = Field(default_factory=Visuals)
     rationale: str = Field(min_length=1, max_length=1600)
 
 

@@ -4,7 +4,7 @@ Verified locally on Windows on 2026-10-17 with Python 3.12 and headless Microsof
 
 ## Automated backend checks
 
-`python -m pytest -q`: **28 passed**, approximately 10 seconds after adding image-content regression coverage.
+`python -m pytest -q`: **40 passed**, approximately 12 seconds with image-content and expressive-theme regression coverage. Optional `node --test tests/test_visual_map.mjs`: **6 passed**.
 
 - Strict token schema: exact fields, hex colors, enums and heading-weight bounds.
 - Text/background contrast correction reaches 4.5:1 and changes no other token.
@@ -55,3 +55,14 @@ Optional adaptive replanning after round five and automated VLM image tagging ar
 ## Duplicate-reference correction
 
 The initial procedural pattern generator cycled ten palettes and five motifs together, creating identical images every ten indices. ID-only pairing checks did not detect that different filenames contained the same pixels. The motif now shifts on each palette cycle, the 15 repeated sample assets were replaced, and library loading fingerprints normalized image content before exposing references to either seeded or model-planned selection. A previously failing regression now passes. Existing manifests and image ids remain compatible.
+
+## Expressive redesign verification
+
+- Botanical, cosmic, architectural and editorial presets use different SVG scenes, hero composition, button silhouette, card surface and animation settings. The default theme and old saved tokens still work.
+- A complete offline API session with a green starting image produces forest graphics, a centered composition, calm motion, pill buttons, organic cards, rounded geometry and a green primary color, even after all ten reference choices.
+- New VLM extraction must include every visual field; missing fields trigger the existing retry/fallback path. Legacy file loading remains compatible.
+- Fixed CSS mappings reject unknown visual values/fields and unvalidated colors before building SVG data URIs. Foreground color for primary buttons is chosen automatically for contrast.
+- All five presentation states (default plus four directions) were checked in Edge at 286/320/686/768/811/1024/1440 px with no document overflow or console errors. Screenshots were visually inspected.
+- Active animation names and running animations were verified. Pause/resume changes playback state. OS reduced motion disables decorative animation, hides the unnecessary pause button and keeps all below-the-fold content visible.
+- A fixture-driven ten-round browser wizard reaches Forest Reverie, pushes the graphics into the iframe, resets and reapplies the full scene, and downloads CSS containing illustration data URIs, shape, layout and motion variables. This browser test uses offline fixtures; paid VLM calls remain untested.
+- The updated content/HTML structure stays fixed while CSS compositions and the full visual design change. See [EXPRESSIVE_THEMES.md](EXPRESSIVE_THEMES.md) for the extension contract and primary references.

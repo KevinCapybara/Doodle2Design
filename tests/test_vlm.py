@@ -82,3 +82,15 @@ def test_invalid_model_pairs_fall_back_to_valid_seeded_plan(monkeypatch):
     pairs, degraded = asyncio.run(vlm.plan_comparisons(ImageDB(), baseline_profile([solid_png("#cbdcba")]), "seed"))
     assert len(pairs) == 10 and degraded
     assert len({i for pair in pairs for i in (pair.left_id, pair.right_id)}) == 20
+
+
+def test_new_model_extraction_requires_complete_visual_direction():
+    from backend.mock import extract_tokens
+    tokens = extract_tokens([solid_png("#5c8450")]).model_dump()
+    assert vlm.validate_extraction(tokens).visuals.motif == "forest"
+    tokens.pop("visuals")
+    with pytest.raises(ValueError, match="visual"):
+        vlm.validate_extraction(tokens)
+    tokens["visuals"] = {"motif": "forest"}
+    with pytest.raises(ValueError, match="visual"):
+        vlm.validate_extraction(tokens)

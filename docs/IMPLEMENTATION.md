@@ -13,6 +13,8 @@ The supplied 16-page specification is the product contract, with the user's nami
 
 All eight implementation stages are complete. Final evidence and remaining live-service verification limits are in [VERIFICATION.md](VERIFICATION.md).
 
+The later request for a more drastic redesign is implemented by the additive [expressive theme contract](EXPRESSIVE_THEMES.md): custom SVG scenes, motion, responsive compositions, button silhouettes and card surfaces. Old saved tokens remain supported.
+
 ## Boundaries and choices
 
 - Localhost only, no auth/database/cloud/deployment/npm/build pipeline.

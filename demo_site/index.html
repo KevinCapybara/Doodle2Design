@@ -4,15 +4,16 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Northwind Analytics — Clarity for every decision</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E↗%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css"><script type="module" src="apply_vibe.js"></script>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="visuals.css"><script type="module" src="apply_vibe.js"></script>
 </head>
 <body>
+  <div class="ambient-scene" aria-hidden="true"></div>
   <div class="grain" aria-hidden="true"></div>
   <header class="navbar"><a href="#" class="brand"><span class="brand-mark">↗</span> Northwind<span class="brand-extra"> Analytics</span></a><nav aria-label="Main navigation"><a href="#features">Product</a><a href="#dashboard">Insights</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></nav><a class="button primary small" href="#contact">Get started <span aria-hidden="true">↗</span></a></header>
   <main>
     <section class="hero section">
       <div><p class="eyebrow">YOUR DATA. A CLEARER DIRECTION.</p><h1>Less noise.<br>More possibility.</h1><p class="hero-copy">Turn the numbers you have into the answers you need. One clear view of your business, built for the way you think.</p><div class="actions"><a class="button primary" href="#dashboard">Explore the dashboard <span aria-hidden="true">↗</span></a><a class="button secondary" href="#features">See how it works</a></div><p class="fine">Made for curious teams. Ready for your next big idea.</p></div>
-      <div class="hero-visual" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><span class="visual-label">A NEW PERSPECTIVE</span><div class="floating-stat"><span>Potential, unlocked</span><strong>+32.8% <small>↗</small></strong><div class="sparkline"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
+      <div class="hero-visual" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="theme-art"></div><span class="visual-label">A NEW PERSPECTIVE</span><div class="floating-stat"><span>Potential, unlocked</span><strong>+32.8% <small>↗</small></strong><div class="sparkline"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
     </section>
     <section class="section" id="features"><div class="section-heading"><p class="eyebrow">BUILT FOR THE BIG PICTURE</p><h2>Everything connects.<br>Now you can see it.</h2><p>Good decisions start with a little clarity.</p></div>
       <div class="features">
@@ -29,5 +30,6 @@
     <section class="section contact" id="contact"><div><p class="eyebrow">START A CONVERSATION</p><h2>What's on<br>your horizon?</h2><p>Tell us a little about your team.<br>Let's find a clearer direction together.</p></div><form class="card" id="contact-form"><label for="email">Work email</label><input id="email" type="email" placeholder="you@company.com" required autocomplete="email"><label for="team">Team size</label><select id="team"><option>1–10 people</option><option>11–50 people</option><option>51–200 people</option><option>201+ people</option></select><label for="message">What would you like to explore?</label><textarea id="message" rows="3" placeholder="A little context goes a long way…"></textarea><button class="button primary" type="submit">Let's find out <span aria-hidden="true">↗</span></button><p id="form-feedback" role="status"></p></form></section>
   </main>
   <footer><a class="brand" href="#">↗ Northwind Analytics</a><p>A clearer direction, together.</p><small>Fictional product · Doodle2Design theme demo</small></footer>
+  <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false">Pause motion Ⅱ</button>
 </body>
 </html>
