@@ -1,5 +1,7 @@
 # Doodle2Design
 
+🏆 **2nd place (Main Track)** at the **"Build Something AI Cannot Do Alone @ Cal"** hackathon.
+
 **Your instinct. A design language.**
 
 Draw a feeling or upload visual references, follow your eye through ten A/B
