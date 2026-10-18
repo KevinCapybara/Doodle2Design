@@ -5,6 +5,9 @@
 Draw a feeling or upload visual references, follow your eye through ten A/B
 comparisons, and let an LLM turn that taste into a completely redesigned website.
 
+[Quick start](#quick-start) · [How it works](#how-it-works) ·
+[Architecture](#architecture-and-isolation) · [API](#api) · [Verification](#verification)
+
 ## Quick start
 
 Install Python **3.10 or newer**, clone this repository, then run:
@@ -55,7 +58,7 @@ original demo content are sent for generation.
 
 ## Use it
 
-1. **Express your taste.** Draw with brush, shapes and color, or upload 1â€“3
+1. **Express your taste.** Draw with brush, shapes and color, or upload 1–3
    PNG/JPG/WebP references (8 MB and 25 megapixels maximum per image).
 2. **Follow your eye.** Choose between two distinct images in each of ten
    text-free rounds. Click, tap or use the left/right arrow keys.
@@ -76,6 +79,72 @@ explicit retry. Start a new feeling cancels active work and clears the session.
 
 Generated pages include pause/resume motion and respect reduced-motion settings.
 The contact form validates locally and shows a demo confirmation; it sends nothing.
+
+## How it works
+
+```mermaid
+flowchart TD
+    A[Drawing or uploaded references] --> B[Normalize images and analyze baseline]
+    B --> C[BaselineProfile]
+    C --> D[Plan all ten A/B pairs]
+    D --> E[Record ten winner/loser choices]
+    C --> F[Extract VibeTokens]
+    E --> F
+    F --> G[Match one of 30 design documents]
+    A --> G
+    E --> G
+    G --> H[Generate HTML, CSS and JavaScript]
+    H --> I[Validate and assemble standalone page]
+    I --> J[Sandboxed preview and downloads]
+```
+
+### Calibration and taste representation
+
+Uploads are decoded with Pillow, checked for format and pixel limits, corrected
+for EXIF orientation, composited onto white, and normalized to JPEG with a maximum
+768-pixel edge. Normalized images are kept in session memory.
+
+| Contract | Contents | Purpose |
+| --- | --- | --- |
+| `BaselineProfile` | Summary, visual attributes, dominant colors, mood words and preferred categories | Anchors calibration in the original input |
+| `ABPair` / `Choice` | Round, category, image IDs and the chosen winner/loser | Records explicit preferences across ten rounds |
+| `VibeTokens` | Name, colors, typography, geometry, effects, visual motifs/layout/motion and rationale | Provides validated taste evidence and supports the legacy renderer |
+| `ExtractResponse` | Tokens, baseline and a `degraded` flag | Caches extraction and identifies offline fallback in the analysis pipeline |
+| `ThemeMatch` | Exact catalog title and match reason | Selects the complete design brief for generation |
+| `GeneratedDesign` | Summary, body HTML, CSS and JavaScript | Supplies the artifact assembled into the preview and HTML download |
+
+These contracts are validated with Pydantic. The extracted token palette receives
+a text/background contrast correction; this does not validate the contrast of the
+subsequently generated website.
+
+All ten comparison pairs are planned after baseline analysis. The baseline's
+preferred categories determine their order; each of the five categories appears
+twice, and no photo repeats. With the bundled, fully tagged library, selection is
+local: a session-seeded shuffle breaks ties, and each pair minimizes shared tags
+among the remaining tagged photos in its category. Left/right placement is also
+seeded. Choices do not change later pairs. If library tags are incomplete, the app
+can request a model plan, validate it, and fall back to the local planner.
+
+Baseline analysis and taste extraction use the configured vision model when
+available. Offline inference derives a palette and visual direction from image
+statistics such as brightness, saturation and edges. Extraction combines the
+original input with all ten winners; online extraction also receives winner and
+loser annotations. Offline extraction weights source images three times alongside
+the winners, with the first choice contributing to its explanation. It is a
+heuristic, not a trained preference model.
+
+### Theme matching and website generation
+
+Matching receives normalized source images, all ten winning photos, the baseline,
+tokens, selected/rejected tags and summaries of all 30 design documents. It must
+return an exact catalog title. Generation receives the same visual evidence,
+the selected full brief, match reason and original Northwind demo HTML.
+
+The model writes a new page using vanilla HTML, CSS, JavaScript and inline SVG.
+The taste tokens inform that design without constraining it to the legacy token
+renderer's layouts or motifs. Calibration can fall back offline; matching and
+generation require a configured provider and never replace a failed generation
+with a preset.
 
 ## Real-photo reference dataset
 
@@ -132,9 +201,27 @@ Restart after importing so the cached catalog reloads.
 ## Architecture and isolation
 
 The app uses FastAPI, in-memory UUID sessions, Pillow, Pydantic, vanilla JavaScript
-and the OpenAI/Anthropic async SDKs. Drawing/upload and A/B calibration feed the existing
-validated taste profile. A background job then selects a document and generates a
-new website. Status is polled while the UI remains responsive.
+and the OpenAI/Anthropic async SDKs. Calibration requests populate a session;
+an asynchronous background task handles matching and generation. The browser
+polls job status while the UI remains responsive.
+
+| Module | Responsibility |
+| --- | --- |
+| `start.py`, `run.bat`, `run.sh` | Local environment setup and server launch |
+| `frontend/` | Drawing/upload flow, comparison rounds, status polling and result controls |
+| `backend/main.py` | FastAPI application, calibration routes, static files and host response headers |
+| `backend/session.py` | Process-local session state, per-session locks, cleanup and cancellation |
+| `backend/imaging.py`, `backend/schemas.py` | Image normalization, typed contracts and token contrast correction |
+| `backend/image_db.py`, `backend/selection.py` | Reference index and ten-round comparison planning |
+| `backend/vlm.py`, `backend/prompts.py` | Baseline analysis, optional model planning and taste extraction |
+| `backend/mock.py`, `backend/design_direction.py` | Image-derived offline analysis and token directions |
+| `backend/ai_provider.py` | Provider/model selection and OpenAI request handling |
+| `backend/redesign.py` | Catalog loading, matching, generation, validation, job lifecycle and artifact routes |
+| `design_prompts/`, `images/` | Design catalog/briefs and annotated photo dataset |
+| `demo_site/` | Original Northwind content and legacy token renderer |
+| `tests/` | Offline API/model-contract tests and browser fixtures |
+
+### Generated-code boundary
 
 Generated code is never executed on the server or inserted into the host DOM.
 A sandboxed iframe and an HTTP content security policy isolate it from the app:
@@ -142,21 +229,49 @@ no host DOM access, storage, network connections, external scripts/resources,
 nested frames or form submissions. Local scripts, animations and form handlers
 work. Exported HTML includes its own restrictive resource policy.
 
+The preview uses both an iframe sandbox and an HTTP CSP sandbox with
+`allow-scripts allow-forms`, without `allow-same-origin`. Its opaque origin blocks
+access to the host's DOM and storage. `form-action 'none'` blocks submissions
+while allowing local form handlers. The downloaded HTML embeds a resource CSP;
+it runs outside the app's iframe and does not carry the preview's HTTP sandbox.
+
+Validation rejects extra response fields, invalid field types/lengths, forbidden
+document/resource tags in body markup, and closing-tag breakouts in CSS or JS.
+It requires section IDs (`features`, `dashboard`, `pricing`, `contact`,
+`contact-form`), selected semantic tags, and literal occurrences of Northwind's
+name, key metrics and prices. These are structural and string checks: they do
+not prove values are visible, all source content is preserved, interactions work,
+or accessibility and visual quality meet the prompt. The sandbox and CSP enforce
+the preview boundary; validation is not a general JavaScript safety proof.
+
 The trusted original Northwind demo remains under /demo/ for comparison.
 The earlier token renderer is retained for compatibility, but is no longer the
 result page's redesign engine. Its fixed visual vocabulary is taste evidence,
 not a limit on the generated website.
 
-Sessions are process-local, limited to 100, with idle cleanup after two hours.
+### State, concurrency and failures
+
+Sessions are process-local and limited to 100. Creating a new session removes
+sessions idle for more than two hours, excluding locked sessions and active
+generation jobs. Cleanup is triggered by session creation, not a periodic timer.
 Reset cancels generation and discards the artifact. Restart loses sessions and
 generated pages; download HTML to keep a design. Uploads stay in memory.
 The legacy latest-token file demo_site/vibe.json remains ignored by Git.
 
-Two generation jobs can run concurrently, with at most four pending. Each model
-stage allows at most two attempts, including invalid output. The total job budget
-is eight minutes. Selection and generation failures produce retryable errors.
+At most four generation jobs may be active in total, including queued and running
+jobs; a semaphore permits two to execute concurrently. Each redesign model stage
+allows at most two attempts, including invalid output, with a 210-second limit
+per attempt. The total job budget is eight minutes, including queue time.
+Selection and generation failures produce retryable errors.
 The original taste extraction retains its 14-second model deadline and offline
 fallback.
+
+Job phases are `idle → queued → matching → generating → ready`, with `error`
+on failure. Repeated start requests reuse queued, running or completed work;
+starting again after an error retries the job. Reset cancels the task and clears
+its state, and server shutdown cancels active tasks. Per-session locks serialize
+calibration mutations. No durable queue, database or cross-worker coordination
+is used, which is why the app runs with one server worker.
 
 See [LLM_REDESIGN.md](docs/LLM_REDESIGN.md) for contracts, lifecycle and boundaries.
 
@@ -182,7 +297,8 @@ See [LLM_REDESIGN.md](docs/LLM_REDESIGN.md) for contracts, lifecycle and boundar
 
 Session-specific GET endpoints use session_id query parameters. Mutation requests
 use JSON session_id unless noted. Invalid phases return 409, unknown sessions 404,
-invalid inputs 422, missing generation configuration 503, and a full job queue 429.
+invalid inputs 422, oversized uploads 413, missing generation configuration 503,
+and a full job queue 429. Session capacity exhaustion also returns 503.
 
 ## Verification
 
