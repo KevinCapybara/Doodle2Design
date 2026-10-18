@@ -1,6 +1,7 @@
 # Doodle2Design
 
 🏆 **2nd place (Main Track)** at the **"Build Something AI Cannot Do Alone @ Cal"** hackathon.
+Hosted by **DiversaTech** and sponsored by **Google**, **Fountain Ventures**, and **Glasser**.
 
 **Your instinct. A design language.**
 
